@@ -1,0 +1,48 @@
+<?php
+
+namespace Modules\Academic\Entities;
+
+use App\Models\Sale;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\Academic\Database\factories\AcaStudentSubscriptionFactory;
+
+class AcaStudentSubscription extends Model
+{
+    use HasFactory;
+    public $incrementing = false; // Deshabilitar incremento automático
+    protected $primaryKey = ['student_id', 'subscription_id'];
+
+    /**
+     * The attributes that are mass assignable.
+     */
+    protected $fillable = [
+        'student_id',
+        'subscription_id',
+        'date_start',
+        'date_end',
+        'status',
+        'notes',
+        'renewals',
+        'registration_user_id',
+        'onli_sale_id',
+        'xdocument_id',
+        'amount_paid',
+        'xsale_note_id'
+    ];
+
+    public function subscription(): BelongsTo
+    {
+        return $this->belongsTo(AcaSubscriptionType::class, 'subscription_id');
+    }
+
+    public function student(): BelongsTo
+    {
+        return $this->belongsTo(AcaStudent::class, 'student_id', 'id');
+    }
+    public function salenote(): BelongsTo
+    {
+        return $this->belongsTo(Sale::class, 'xsale_note_id');
+    }
+}
