@@ -2,706 +2,169 @@
 
 @section('content')
 
-    <div id="wrapper">
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1503387762-592dea58ed23?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Edificio moderno">
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-orange-500 uppercase bg-orange-500/10 rounded-full">Líderes en Ingeniería</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Construimos <span class="text-orange-500">Visiones</span> que Perduran</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto font-light">Especialistas en infraestructura civil, industrial y residencial con los más altos estándares de calidad y seguridad.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#proyectos" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">Nuestros Proyectos</a>
+                <a href="#servicios" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold border border-white/30 transition-all">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
 
-        <x-show-scroll />
+    <!-- Stats Bar -->
+    <section class="bg-white py-16 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div class="text-center">
+                    <div class="text-5xl font-extrabold text-gray-900 mb-2">150+</div>
+                    <div class="text-orange-600 font-semibold uppercase text-xs tracking-widest">Obras Finalizadas</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-extrabold text-gray-900 mb-2">25</div>
+                    <div class="text-orange-600 font-semibold uppercase text-xs tracking-widest">Años de Trayectoria</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-extrabold text-gray-900 mb-2">100%</div>
+                    <div class="text-orange-600 font-semibold uppercase text-xs tracking-widest">Seguridad Laboral</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-extrabold text-gray-900 mb-2">12</div>
+                    <div class="text-orange-600 font-semibold uppercase text-xs tracking-widest">Premios Nacionales</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- page preloader begin -->
-        <div id="de-loader"></div>
-        <!-- page preloader close -->
+    <!-- About Section -->
+    <section id="nosotros" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f3366d4?auto=format&fit=crop&q=80" class="rounded-2xl shadow-2xl relative z-10" alt="Arquitecto en obra">
+                        <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-orange-500 rounded-2xl -z-0 hidden md:block"></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-orange-600 font-bold tracking-widest uppercase mb-4 text-sm">Sobre la Empresa</h2>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">Excelencia en cada detalle, desde el cimiento hasta el acabado.</h3>
+                    <p class="text-gray-600 text-lg mb-8">Fundada con la premisa de transformar el paisaje urbano, nuestra constructora combina métodos tradicionales de solidez con las últimas innovaciones tecnológicas en eficiencia energética.</p>
+                    <ul class="space-y-4 mb-10 text-gray-700">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Gestión integral de licencias y permisos.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Materiales de primera calidad certificados.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Cumplimiento riguroso de plazos de entrega.
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center font-bold text-gray-900 hover:text-orange-600 transition">
+                        Conoce más sobre nuestra historia
+                        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <x-header />
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-orange-600 font-bold tracking-widest uppercase mb-4 text-sm">Servicios Especializados</h2>
+                <h3 class="text-4xl font-bold text-gray-900">Soluciones Constructivas de Extremo a Extremo</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-orange-600 transition-colors">
+                        <svg class="w-8 h-8 text-orange-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Construcción Civil</h4>
+                    <p class="text-gray-600 leading-relaxed">Edificios residenciales y comerciales diseñados para la máxima habitabilidad y durabilidad urbana.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-orange-600 transition-colors">
+                        <svg class="w-8 h-8 text-orange-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Obras Industriales</h4>
+                    <p class="text-gray-600 leading-relaxed">Naves logísticas y complejos fabriles con ingeniería estructural avanzada para procesos pesados.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-orange-600 transition-colors">
+                        <svg class="w-8 h-8 text-orange-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Remodelaciones</h4>
+                    <p class="text-gray-600 leading-relaxed">Renovación total de espacios existentes, inyectando modernidad sin perder la esencia arquitectónica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <x-home-welcome />
+    <!-- Featured Portfolio -->
+    <section id="proyectos" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-orange-500 font-bold tracking-widest uppercase mb-4 text-sm">Nuestro Portafolio</h2>
+                    <h3 class="text-4xl font-bold">Obras que redefinen paisajes</h3>
+                </div>
+                <a href="#" class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1 hover:text-white hover:border-white transition">Ver todos los proyectos</a>
+            </div>
 
-        <x-home-about />
-
-        <x-home-tape />
-
-        <x-value-proposition />
-
-        {{-- <section class="bg-dark section-dark pt-80 relative jarallax" aria-label="section">
-            <img src="images/background/1.webp" class="jarallax-img" alt="">
-            <div class="gradient-edge-top"></div>
-            <div class="gradient-edge-bottom"></div>
-            <div class="sw-overlay op-8"></div>
-            <div class="container">
-                <div class="row g-4">
-
-                    <div class="col-md-12 wow fadeInUp">
-                        <div class="owl-6 no-alpha owl-carousel owl-theme wow mask-right">
-                            <img src="images/logo-light/1.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/2.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/3.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/4.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/5.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/6.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/7.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/8.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/9.webp" class="w-100 px-4" alt="">
-                            <img src="images/logo-light/10.webp" class="w-100 px-4" alt="">
-                        </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project item -->
+                <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 1">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Corporativo</span>
+                        <h4 class="text-2xl font-bold">Centro Empresarial Skyline</h4>
+                    </div>
+                </div>
+                <!-- Project item -->
+                <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 2">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Residencial</span>
+                        <h4 class="text-2xl font-bold">Torres del Valle</h4>
+                    </div>
+                </div>
+                <!-- Project item -->
+                <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 3">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Industrial</span>
+                        <h4 class="text-2xl font-bold">Planta Logística Nexo</h4>
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </div>
+    </section>
 
-        {{-- <section id="section-schedule" class="bg-dark section-dark text-light">
-            <div class="container">
-                <div class="row g-4 gx-5 justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Event Schedule</div>
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">5 Days of AI Excellence</h2>
-                    </div>
-                </div>
-                <div class="row g-4 gx-5 justify-content-center wow fadeInUp">
-                    <div class="col-lg-12">
-                        <div class="de-tab plain">
-                            <ul class="d-tab-nav mb-4 pb-4 d-flex justify-content-between">
-                                <li class="active-tab">
-                                    <h3>Day 1</h3>
-                                    Oct 1, 2025
-                                </li>
-                                <li>
-                                    <h3>Day 2</h3>
-                                    Oct 2, 2025
-                                </li>
-                                <li>
-                                    <h3>Day 3</h3>
-                                    Oct 3, 2025
-                                </li>
-                                <li>
-                                    <h3>Day 4</h3>
-                                    Oct 5, 2025
-                                </li>
-                                <li>
-                                    <h3>Day 5</h3>
-                                    Oct 5, 2025
-                                </li>
-                            </ul>
-                            <ul class="d-tab-content pt-3 wow fadeInUp">
-                                <!-- day 1 -->
-                                <li>
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                08:00 – 10:00 AM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/1.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Joshua Henry</h5>
-                                                        AI Research Lead, DeepTech Labs
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Opening Keynote – The State of AI 2025</h3>
-                                                <p class="fs-15 mb-0">Kick off the event with an insightful overview of
-                                                    where artificial intelligence is headed. Ava will explore breakthroughs,
-                                                    global shifts, and what’s next in deep learning, generative models, and
-                                                    AI ethics.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                12:00 – 14:00 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/2.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Leila Zhang</h5>
-                                                        VP of Machine Learning, Google
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Building Human-Centered AI Products</h3>
-                                                <p class="fs-15 mb-0">This session covers how to design AI solutions that
-                                                    prioritize usability, fairness, and real-world impact. Bring your
-                                                    laptop—hands-on UX exercises included.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                16:00 – 18:00 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/3.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Carlos Rivera</h5>
-                                                        Founder & CEO, NeuralCore
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: AI Policy & Regulation – A Global Overview</h3>
-                                                <p class="fs-15 mb-0">Learn how nations and organizations are approaching
-                                                    AI governance, including frameworks for data privacy, bias mitigation,
-                                                    and accountability in model deployment.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                20:00 – 22:00 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/4.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Maria Gonzalez</h5>
-                                                        Founder & CEO, SynthCore AI
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Building a Startup with AI at the Core</h3>
-                                                <p class="fs-15 mb-0">Marco shares his journey launching an AI-first
-                                                    startup. Discover tips on tech stacks, team-building, funding, and
-                                                    scaling responsibly.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-                                </li>
-
-                                <!-- day 2 -->
-                                <li>
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                09:00 – 10:30 AM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/5.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Leila Zhang</h5>
-                                                        Head of AI Strategy, VisionFlow
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Ethical AI — From Theory to Practice</h3>
-                                                <p class="fs-15 mb-0">Explore how leading companies are implementing
-                                                    fairness, accountability, and transparency in real-world AI systems
-                                                    across healthcare and finance.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                11:00 – 12:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/6.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Lisa Zhang</h5>
-                                                        AI Ethics Researcher, FairAI Group
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Bias in Data — Hidden Dangers in AI Pipelines</h3>
-                                                <p class="fs-15 mb-0">Lisa dives deep into the causes of bias in training
-                                                    data and showcases methods to detect and mitigate harm before
-                                                    deployment.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                14:00 – 15:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/7.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Markus Blom</h5>
-                                                        CTO, SynthMind AI
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Generative Models Beyond Text</h3>
-                                                <p class="fs-15 mb-0">A practical tour of the next generation of multimodal
-                                                    models generating images, video, and even 3D environments with AI.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                16:00 – 17:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/8.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Priya Natarajan</h5>
-                                                        Lead Engineer, CogniWare
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Workshop: Building AI-Powered Interfaces</h3>
-                                                <p class="fs-15 mb-0">Learn how to embed conversational AI into web and
-                                                    mobile apps using modern open-source frameworks and API-first design.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                </li>
-
-                                <!-- day 3 -->
-                                <li>
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                09:00 – 10:30 AM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/9.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Sofia Romero</h5>
-                                                        ML Engineer, NeuronEdge
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Transformers in 2025 — What's Next?</h3>
-                                                <p class="fs-15 mb-0">A technical session diving into the future of
-                                                    transformer architectures, memory optimization, and scaling challenges.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                11:00 – 12:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/10.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Tomás Eriksson</h5>
-                                                        Founder, RealSim AI
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Synthetic Data Generation for Training</h3>
-                                                <p class="fs-15 mb-0">Tomás shares tools and techniques for creating
-                                                    high-quality synthetic datasets that speed up training and reduce risk.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                14:00 – 15:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/11.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Aisha Mensah</h5>
-                                                        Senior AI Strategist, Datavine
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Panel: AI Regulation & Global Policy Outlook</h3>
-                                                <p class="fs-15 mb-0">Top voices discuss the global AI policy landscape,
-                                                    upcoming legislation, and how it will shape the future of AI deployment.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                16:00 – 17:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/12.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Leo Tanaka</h5>
-                                                        Robotics Engineer, MetaForm
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Embodied AI in Robotics</h3>
-                                                <p class="fs-15 mb-0">Discover how AI is powering next-gen robotics for
-                                                    manufacturing, logistics, and autonomous mobility through real-time
-                                                    interaction models.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                </li>
-
-                                <!-- day 4 -->
-                                <li>
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                09:00 – 10:30 AM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/13.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Nina Köhler</h5>
-                                                        Chief Product Officer, SynthOS
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: AI in Product Design — From Concept to Launch</h3>
-                                                <p class="fs-15 mb-0">Nina shares how AI is revolutionizing product
-                                                    development, from ideation to real-time user feedback integration.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                11:00 – 12:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/14.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Emmanuel Ruiz</h5>
-                                                        CEO, NextCore Analytics
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Scaling AI Infrastructure for Enterprise</h3>
-                                                <p class="fs-15 mb-0">Explore key considerations when deploying and
-                                                    managing scalable, secure, and cost-effective AI systems in the
-                                                    enterprise space.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                14:00 – 15:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/15.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Isabelle Chen</h5>
-                                                        Head of Language Models, LumoAI
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Multilingual AI — Global Challenges & Innovations</h3>
-                                                <p class="fs-15 mb-0">How modern LLMs are overcoming linguistic bias,
-                                                    translation errors, and dialect diversity in global applications.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                16:00 – 17:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/16.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Connor Walsh</h5>
-                                                        Cloud AI Architect, SkyStack
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Workshop: Building AI Pipelines in the Cloud</h3>
-                                                <p class="fs-15 mb-0">Hands-on session building a full AI workflow using
-                                                    serverless tech, vector databases, and model deployment strategies.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                </li>
-
-                                <!-- day 5 -->
-                                <li>
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                09:00 – 10:30 AM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/17.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Elena Greco</h5>
-                                                        Ethics Advisor, Global AI Forum
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Ethical Design in AI — A Human-Centered Approach</h3>
-                                                <p class="fs-15 mb-0">A deep dive into responsible AI, highlighting bias
-                                                    mitigation, fairness, transparency, and global implications of
-                                                    autonomous systems.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                11:00 – 12:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/18.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Marcus Dlamini</h5>
-                                                        Founder, EduAI Labs
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Personalized Learning with AI</h3>
-                                                <p class="fs-15 mb-0">Explore how AI-driven platforms are transforming
-                                                    education with adaptive learning paths and dynamic content delivery.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="border-white-bottom-op-2 pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                14:00 – 15:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/19.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Lara Nguyen</h5>
-                                                        GenAI Director, NovaSynth
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Session: Creative AI — From Text to Video</h3>
-                                                <p class="fs-15 mb-0">Lara demonstrates how generative AI is transforming
-                                                    content creation, with real-time demos in video, audio, and image
-                                                    generation.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                    <!-- schedule item begin -->
-                                    <div class="pb-5 mb-5">
-                                        <div class="row g-4 align-items-center">
-                                            <div class="col-md-2">
-                                                16:00 – 17:30 PM
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/team/20.webp" class="w-100px rounded-1 me-4"
-                                                        alt="">
-                                                    <div>
-                                                        <h5 class="mb-0">Dr. Hassan Al-Mansour</h5>
-                                                        Lead Data Scientist, FutureVision
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h3>Closing Keynote: AI & Humanity — Co-Evolution or Collapse?</h3>
-                                                <p class="fs-15 mb-0">A visionary closing on AI’s long-term trajectory,
-                                                    human-AI collaboration, and the existential questions we must answer
-                                                    now.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- schedule item end -->
-
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
-
-        <x-home-products />
-
-        <x-home-location />
-        
-
-        <x-home-customers />
-
-        {{-- <section id="section-faq" class="bg-dark section-dark text-light">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-5">
-                        <div class="subtitle wow fadeInUp" data-wow-delay=".0s">Everything You Need to Know</div>
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="accordion s2 wow fadeInUp">
-                            <div class="accordion-section">
-                                <div class="accordion-section-title" data-tab="#accordion-a1">
-                                    What is the AI Summit 2025?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a1">
-                                    The AI Summit 2025 is a premier event gathering leading AI experts, thought leaders, and
-                                    innovators. It features keynotes, workshops, panels, and networking opportunities
-                                    focusing on the latest advancements in artificial intelligence.
-                                </div>
-
-                                <div class="accordion-section-title" data-tab="#accordion-a2">
-                                    When and where will the event be held?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a2">
-                                    The AI Summit 2025 will take place from **[Event Dates]** at **[Event Location]**. More
-                                    details about the venue and directions will be provided closer to the event.
-                                </div>
-
-                                <div class="accordion-section-title" data-tab="#accordion-a3">
-                                    How can I register for the event?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a3">
-                                    You can register for the AI Summit 2025 through our official website. Simply choose your
-                                    ticket type and fill out the registration form.
-                                </div>
-
-                                <div class="accordion-section-title" data-tab="#accordion-a4">
-                                    What ticket options are available?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a4">
-                                    We offer a range of ticket options, including Standard, VIP, Full Access Pass, Student,
-                                    and Virtual tickets. You can find more details about each ticket type on our [Tickets
-                                    Page](#).
-                                </div>
-
-                                <div class="accordion-section-title" data-tab="#accordion-a5">
-                                    Can I transfer my ticket to someone else?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a5">
-                                    Tickets are non-transferable. If you are unable to attend, please contact our support
-                                    team for assistance.
-                                </div>
-
-                                <div class="accordion-section-title" data-tab="#accordion-a6">
-                                    Will there be virtual participation?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a6">
-                                    Yes! For those who can’t attend in person, we offer a **Virtual Ticket**. This provides
-                                    access to live-streamed sessions, workshops, and networking opportunities online.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
-
-        <x-bulletin />
-
-    </div>
-
-    <!-- footer begin -->
-    <x-footer />
-    <!-- footer end -->
-
+    <!-- CTA Section -->
+    <section class="py-20 bg-orange-600">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">¿Listo para iniciar su próximo proyecto?</h2>
+            <p class="text-orange-100 text-xl mb-12 max-w-2xl mx-auto font-light">Agende una asesoría técnica gratuita con nuestros ingenieros y reciba un presupuesto preliminar sin compromiso.</p>
+            <a href="#" class="inline-block bg-gray-900 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-black transition-all shadow-xl">Contactar con un Experto</a>
+        </div>
+    </section>
 @stop
+
