@@ -141,4 +141,129 @@
             </div>
         </div>
     </section>
+
+    <!-- Related Projects Section -->
+    <section class="py-24 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <div>
+                    <span class="text-orange-500 font-bold tracking-widest uppercase text-xs mb-2 block">Siga Explorando</span>
+                    <h2 class="text-3xl font-bold text-gray-900 uppercase tracking-tight">Proyectos Relacionados</h2>
+                </div>
+                <a href="{{ route('web_projects') }}" class="text-orange-600 font-bold text-sm hover:text-gray-900 transition-colors inline-flex items-center gap-2">
+                    Ver todo el portafolio
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Related Project 1 -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-xl bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0" alt="Proyecto">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span class="text-orange-500 text-[10px] font-black uppercase tracking-widest mb-2 block">Residencial</span>
+                        <h4 class="text-xl font-bold text-white mb-4">Torres del Valle Luxury</h4>
+                        <a href="{{ route('web_project_detail') }}" class="text-white text-[10px] font-bold uppercase tracking-widest border-b border-orange-500 pb-1 hover:text-orange-500 transition-colors">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Related Project 2 -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-xl bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0" alt="Proyecto">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span class="text-orange-500 text-[10px] font-black uppercase tracking-widest mb-2 block">Industrial</span>
+                        <h4 class="text-xl font-bold text-white mb-4">Planta Logística Nexo</h4>
+                        <a href="{{ route('web_project_detail') }}" class="text-white text-[10px] font-bold uppercase tracking-widest border-b border-orange-500 pb-1 hover:text-orange-500 transition-colors">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Related Project 3 -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-xl bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0" alt="Proyecto">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span class="text-orange-500 text-[10px] font-black uppercase tracking-widest mb-2 block">Residencial</span>
+                        <h4 class="text-xl font-bold text-white mb-4">Residencia La Jolla</h4>
+                        <a href="{{ route('web_project_detail') }}" class="text-white text-[10px] font-bold uppercase tracking-widest border-b border-orange-500 pb-1 hover:text-orange-500 transition-colors">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-orange-500 font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Experiencias</span>
+                <h2 class="text-4xl font-bold text-gray-900 uppercase tracking-tight">Lo que dicen nuestros clientes</h2>
+            </div>
+
+            <div x-data="{ 
+                active: 0,
+                testimonials: [
+                    {
+                        quote: 'La precisión técnica y el cumplimiento de los plazos en el Centro Skyline fueron excepcionales. BriseConst es ahora nuestro socio estratégico para futuros desarrollos.',
+                        author: 'Ing. Marcos Vega',
+                        position: 'Director de Proyectos, Inversiones Inmobiliarias S.A.',
+                        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                    },
+                    {
+                        quote: 'Transformaron nuestra visión arquitectónica en una estructura funcional y moderna. Su atención al detalle en los acabados de alta gama es lo que los diferencia.',
+                        author: 'Arq. Lucía Pardo',
+                        position: 'Socia Fundadora, Studio Design Co.',
+                        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                    },
+                    {
+                        quote: 'Seguridad y calidad en cada etapa. Lograron optimizar costos sin sacrificar la integridad estructural de nuestra planta logística. Altamente recomendados.',
+                        author: 'Roberto Gómez',
+                        position: 'Gerente General, Logística Nexo',
+                        image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                    }
+                ],
+                next() { this.active = (this.active + 1) % this.testimonials.length },
+                prev() { this.active = (this.active - 1 + this.testimonials.length) % this.testimonials.length }
+            }" class="relative max-w-4xl mx-auto">
+                
+                <!-- Slides -->
+                <div class="relative min-h-[400px] md:min-h-[300px] flex items-center">
+                    <template x-for="(t, index) in testimonials" :key="index">
+                        <div x-show="active === index" 
+                             x-transition:enter="transition ease-out duration-500"
+                             x-transition:enter-start="opacity-0 scale-95 translate-x-8"
+                             x-transition:enter-end="opacity-100 scale-100 translate-x-0"
+                             x-transition:leave="transition ease-in duration-300 absolute"
+                             x-transition:leave-start="opacity-100 scale-100"
+                             x-transition:leave-end="opacity-0 scale-95 -translate-x-8"
+                             class="w-full text-center">
+                            
+                            <svg class="w-16 h-16 text-orange-500/20 mx-auto mb-8" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8v8H6c0 4.418 3.582 8 8 8V24c-6.627 0-12-5.373-12-12V8h8zm16 0v8h-4c0 4.418 3.582 8 8 8V24c-6.627 0-12-5.373-12-12V8h8z"/></svg>
+                            
+                            <p class="text-2xl md:text-3xl font-light text-gray-700 italic leading-relaxed mb-10" x-text="'&ldquo;' + t.quote + '&rdquo;'"></p>
+                            
+                            <div class="flex items-center justify-center gap-4 text-left">
+                                <img :src="t.image" class="w-14 h-14 rounded-full object-cover border-2 border-orange-500/20" :alt="t.author">
+                                <div>
+                                    <h4 class="font-bold text-gray-900 uppercase tracking-wide" x-text="t.author"></h4>
+                                    <p class="text-xs text-orange-600 font-semibold uppercase tracking-widest" x-text="t.position"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+
+                <!-- Controls -->
+                <div class="flex justify-center gap-6 mt-12">
+                    <button @click="prev()" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-all group">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                    </button>
+                    <button @click="next()" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-all group">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 @stop
