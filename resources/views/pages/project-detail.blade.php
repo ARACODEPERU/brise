@@ -134,7 +134,7 @@
                         <div class="p-8 border-2 border-gray-100 rounded-3xl text-center bg-gray-50">
                             <h4 class="font-bold mb-4">¿Desea algo similar?</h4>
                             <p class="text-sm text-gray-500 mb-6 leading-relaxed">Contamos con la infraestructura y experiencia para materializar su visión corporativa.</p>
-                            <a href="/contacto" class="inline-block w-full bg-orange-600 text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[10px] hover:bg-orange-700 transition-all shadow-xl shadow-orange-600/20">Solicitar Asesoría</a>
+                            <button @click="$store.quoteModal.open()" class="inline-block w-full bg-orange-600 text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[10px] hover:bg-orange-700 transition-all shadow-xl shadow-orange-600/20">Solicitar Asesoría</button>
                         </div>
                     </div>
                 </div>

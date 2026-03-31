@@ -2,15 +2,28 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section class="relative h-[45vh] flex items-center bg-gray-900 text-white overflow-hidden">
+    <section class="relative h-[50vh] flex items-center bg-gray-900 text-white overflow-hidden pt-20">
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-30" alt="Ingeniería y Proyectos">
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Ingeniería y Proyectos">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>
         </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full text-center">
-            <span class="text-orange-500 font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Portafolio</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4">Nuestras <span class="text-orange-500 italic font-light">Obras</span></h1>
-            <p class="text-lg text-gray-300 max-w-2xl mx-auto font-light">Explora nuestra trayectoria a través de proyectos que combinan innovación arquitectónica y solidez técnica.</p>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <nav class="flex mb-8 text-sm font-bold uppercase tracking-widest text-orange-500/80" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="/" class="hover:text-white transition-colors">Inicio</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="ml-1 md:ml-2 text-white">Proyectos</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Nuestras <span class="text-orange-500">Obras</span></h1>
         </div>
     </section>
 
@@ -20,10 +33,10 @@
             
             <!-- Filter Bar -->
             <div class="flex flex-wrap justify-center gap-3 mb-20">
-                <button @click="filter = 'all'" :class="filter === 'all' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/30' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300">Todos</button>
-                <button @click="filter = 'residencial'" :class="filter === 'residencial' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/30' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300">Residencial</button>
-                <button @click="filter = 'comercial'" :class="filter === 'comercial' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/30' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300">Comercial</button>
-                <button @click="filter = 'industrial'" :class="filter === 'industrial' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/30' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300">Industrial</button>
+                <button @click="filter = 'all'" :class="filter === 'all' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/30' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 hover:scale-110 active:scale-95">Todos</button>
+                <button @click="filter = 'residencial'" :class="filter === 'residencial' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/30' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 hover:scale-110 active:scale-95">Residencial</button>
+                <button @click="filter = 'comercial'" :class="filter === 'comercial' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/30' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 hover:scale-110 active:scale-95">Comercial</button>
+                <button @click="filter = 'industrial'" :class="filter === 'industrial' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/30' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 hover:scale-110 active:scale-95">Industrial</button>
             </div>
 
             <!-- Projects Grid -->
@@ -108,7 +121,7 @@
             <h2 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">¿Tiene un desafío constructivo para nosotros?</h2>
             <p class="text-gray-600 mb-12 text-lg font-light">Convertimos planos complejos en realidades tangibles. Hablemos sobre los plazos y requerimientos de su próxima obra.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/contacto" class="bg-orange-600 hover:bg-orange-700 text-white px-10 py-4 rounded-xl font-bold transition-all shadow-xl shadow-orange-600/20">Solicitar Presupuesto</a>
+                <button @click="$store.quoteModal.open()" class="bg-orange-600 hover:bg-orange-700 text-white px-10 py-4 rounded-xl font-bold transition-all shadow-xl shadow-orange-600/20">Solicitar Presupuesto</button>
                 <a href="https://wa.me/yournumber" class="bg-white border border-gray-200 text-gray-900 px-10 py-4 rounded-xl font-bold hover:bg-gray-50 transition-all">Consultar vía WhatsApp</a>
             </div>
         </div>

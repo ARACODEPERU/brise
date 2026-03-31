@@ -109,24 +109,9 @@ class NotaDebito
             $client->setAddress($clientAddress);
         }
 
-        // Emisor
-        $address = (new Address())
-            ->setUbigueo($establishment->ubigeo)
-            ->setDepartamento($department->name)
-            ->setProvincia($province->name)
-            ->setDistrito($establishment->district->name)
-            ->setUrbanizacion('-')
-            ->setDireccion($establishment->address)
-            ->setCodLocal($establishment->sunat_code); // Codigo de establecimiento asignado por SUNAT, 0000 por defecto.
-
-
-        $company = (new Company())
-            ->setRuc($this->mycompany->ruc)
-            ->setRazonSocial($this->mycompany->business_name)
-            ->setNombreComercial($this->mycompany->tradename)
-            ->setEmail($this->mycompany->email)
-            ->setTelephone($this->mycompany->phone)
-            ->setAddress($address);
+        // Sugerencia: Crear un método en Util o un Helper para obtener el Emisor
+        // evitando repetir este bloque en cada clase de documento.
+        $company = $this->util->getCompanyData($establishment);
 
         $broadcast_date = new DateTime($document->invoice_broadcast_date . ' ' . Carbon::parse($document->created_at)->format('H:m:s'));
         $invoice_name = $invoice->invoice_serie . '-' . $invoice->invoice_correlative;

@@ -15,7 +15,8 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex space-x-8">
-                @php $links = ['Inicio' => '/', 'Nosotros' => '/nosotros', 'Servicios' => '#servicios', 'Proyectos' => '/proyectos']; @endphp
+                {{-- @php $links = ['Inicio' => '/', 'Nosotros' => '/nosotros', 'Servicios' => '/servicios', 'Proyectos' => '/proyectos']; @endphp --}}
+                @php $links = ['Inicio' => '/', 'Nosotros' => '/nosotros', 'Servicios' => '/servicios', 'Contacto' => '/contacto']; @endphp
                 @foreach($links as $name => $url)
                     <a href="{{ $url }}" 
                        :class="{ 'text-gray-600 hover:text-orange-600': !atTop, 'text-gray-200 hover:text-white': atTop }"
@@ -27,9 +28,9 @@
 
             <!-- Desktop CTA -->
             <div class="hidden md:block">
-                <a href="#contacto" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-widest transition-all shadow-lg hover:shadow-orange-500/20">
+                <button @click="$store.quoteModal.open()" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-widest transition-all shadow-lg hover:shadow-orange-500/20">
                     Cotizar Proyecto
-                </a>
+                </button>
             </div>
 
             <!-- Mobile menu button -->
@@ -57,7 +58,10 @@
             @foreach($links as $name => $url)
                 <a href="{{ $url }}" @click="open = false" class="block px-3 py-4 text-sm font-bold text-gray-700 border-b border-gray-50 uppercase tracking-wider hover:text-orange-600">{{ $name }}</a>
             @endforeach
-            <a href="#contacto" @click="open = false" class="block w-full mt-4 text-center bg-gray-900 text-white px-6 py-4 rounded-lg font-bold uppercase tracking-widest text-xs">Solicitar Presupuesto</a>
+            <button @click="open = false; $store.quoteModal.open()" class="block w-full mt-4 text-center bg-gray-900 text-white px-6 py-4 rounded-lg font-bold uppercase tracking-widest text-xs text-left">Solicitar Presupuesto</button>
         </div>
     </div>
 </header>
+
+{{-- Incluimos el modal aquí para que esté disponible globalmente --}}
+@include('partials.modal-quote')

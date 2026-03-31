@@ -1,15 +1,29 @@
 @extends('layouts.webpage')
 
 @section('content')
-    <!-- Inner Hero Section -->
-    <section class="relative h-[60vh] flex items-center bg-gray-900 text-white overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative h-[50vh] flex items-center bg-gray-900 text-white overflow-hidden pt-20">
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-30" alt="Ingeniería y planos">
-            <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent"></div>
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Ingeniería y planos">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
-            <span class="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4 block">Conócenos</span>
-            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">Mas de dos décadas<br><span class="text-orange-500 font-light italic">edificando confianza.</span></h1>
+            <nav class="flex mb-8 text-sm font-bold uppercase tracking-widest text-orange-500/80" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="/" class="hover:text-white transition-colors">Inicio</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="ml-1 md:ml-2 text-white">Nosotros</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Sobre <span class="text-orange-500">Nosotros</span></h1>
         </div>
     </section>
 
