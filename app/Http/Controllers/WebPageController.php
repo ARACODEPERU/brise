@@ -56,24 +56,14 @@ class WebPageController extends Controller
         return view('pages.about');
     }
 
-    public function cms()
+    public function projects()
     {
-        return view('pages.cms');
+        return view('pages.projects');
     }
 
-    public function storeonline()
+    public function projectDetail()
     {
-        return view('pages.store-online');
-    }
-
-    public function lms()
-    {
-        return view('pages.lms');
-    }
-
-    public function billing()
-    {
-        return view('pages.billing');
+        return view('pages.project-detail');
     }
 
     public function contact()

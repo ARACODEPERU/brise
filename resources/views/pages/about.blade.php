@@ -1,6 +1,126 @@
 @extends('layouts.webpage')
 
 @section('content')
+    <!-- Inner Hero Section -->
+    <section class="relative h-[60vh] flex items-center bg-gray-900 text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-30" alt="Ingeniería y planos">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <span class="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4 block">Conócenos</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">Mas de dos décadas<br><span class="text-orange-500 font-light italic">edificando confianza.</span></h1>
+        </div>
+    </section>
 
+    <!-- Introduction Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Transformando el panorama urbano con ingeniería de precisión.</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        En <strong>BriseConst</strong>, no solo levantamos muros; creamos los cimientos del progreso. Desde nuestra fundación, nos hemos dedicado a superar las expectativas de nuestros clientes a través de la innovación constante y un compromiso inquebrantable con la calidad.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Nuestro equipo multidisciplinario de ingenieros, arquitectos y especialistas trabaja en sincronía para entregar proyectos que no solo cumplen con las normativas vigentes, sino que establecen nuevos estándares en la industria.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80" class="rounded-lg shadow-lg mt-8" alt="Detalle técnico">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f3366d4?auto=format&fit=crop&q=80" class="rounded-lg shadow-lg" alt="Obra en curso">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Mission, Vision & Values -->
+    <section class="py-24 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Misión -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Nuestra Misión</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">Proporcionar soluciones constructivas innovadoras y sostenibles que generen valor para nuestros clientes, garantizando la seguridad y el desarrollo de nuestra comunidad.</p>
+                </div>
+                <!-- Visión -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Nuestra Visión</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">Ser reconocidos internacionalmente como la constructora más confiable y eficiente, liderando la transformación hacia ciudades más inteligentes y resilientes.</p>
+                </div>
+                <!-- Valores -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Nuestros Valores</h3>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-center gap-2 font-semibold text-gray-800 italic uppercase tracking-tight text-xs">
+                            <span class="w-1.5 h-1.5 bg-orange-600 rounded-full"></span> Integridad Absoluta
+                        </li>
+                        <li class="flex items-center gap-2 font-semibold text-gray-800 italic uppercase tracking-tight text-xs">
+                            <span class="w-1.5 h-1.5 bg-orange-600 rounded-full"></span> Seguridad Ante Todo
+                        </li>
+                        <li class="flex items-center gap-2 font-semibold text-gray-800 italic uppercase tracking-tight text-xs">
+                            <span class="w-1.5 h-1.5 bg-orange-600 rounded-full"></span> Calidad Sin Concesiones
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership/Team Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-orange-600 font-bold tracking-widest uppercase mb-4 text-sm">El Equipo</h2>
+            <h3 class="text-4xl font-bold text-gray-900">Liderazgo con experiencia</h3>
+        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Member 1 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">Ing. Ricardo Briseño</h4>
+                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">CEO & Fundador</p>
+                </div>
+                <!-- Member 2 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">Arq. Elena Méndez</h4>
+                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">Directora de Diseño</p>
+                </div>
+                <!-- Member 3 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">Ing. Carlos Ruíz</h4>
+                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">Gerente de Operaciones</p>
+                </div>
+                <!-- Member 4 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">Ing. Alberto Sosa</h4>
+                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">Jefe de Seguridad</p>
+                </div>
+            </div>
+        </div>
+    </section>
 @stop

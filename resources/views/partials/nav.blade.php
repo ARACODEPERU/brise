@@ -15,7 +15,7 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex space-x-8">
-                @php $links = ['Inicio' => '/', 'Nosotros' => '#nosotros', 'Servicios' => '#servicios', 'Proyectos' => '#proyectos']; @endphp
+                @php $links = ['Inicio' => '/', 'Nosotros' => '/nosotros', 'Servicios' => '#servicios', 'Proyectos' => '/proyectos']; @endphp
                 @foreach($links as $name => $url)
                     <a href="{{ $url }}" 
                        :class="{ 'text-gray-600 hover:text-orange-600': !atTop, 'text-gray-200 hover:text-white': atTop }"

@@ -30,10 +30,8 @@ use Modules\Sales\Http\Controllers\SalesController;
 Route::get('/', [WebPageController::class, 'home'])->name('index_main');
 Route::get('/home', [WebPageController::class, 'home'])->name('index_main');
 Route::get('/nosotros', [WebPageController::class, 'about'])->name('web_about');
-Route::get('/sitios-webs', [WebPageController::class, 'cms'])->name('web_cms');
-Route::get('/tienda-online', [WebPageController::class, 'storeonline'])->name('web_store_online');
-Route::get('/e-learning', [WebPageController::class, 'lms'])->name('web_lms');
-Route::get('/facturador', [WebPageController::class, 'billing'])->name('web_billing');
+Route::get('/proyectos', [WebPageController::class, 'projects'])->name('web_projects');
+Route::get('/proyecto-detalle', [WebPageController::class, 'projectDetail'])->name('web_project_detail');
 Route::get('/contacto', [WebPageController::class, 'contact'])->name('web_contact');
 
 // Route::get('/', [LandingController::class, 'index'])->name('index_main');
