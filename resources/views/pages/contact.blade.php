@@ -4,7 +4,7 @@
     <!-- Hero Section -->
     <section class="relative h-[50vh] flex items-center bg-gray-900 text-white overflow-hidden pt-20">
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1523841589119-b9f80ce511e7?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Contacto BriseConst">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Sede corporativa de BriseConst">
             <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -130,4 +130,3 @@
         </div>
     </section>
 @stop
-
