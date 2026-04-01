@@ -40,18 +40,10 @@ class ComplaintsBookController extends Controller
 
         $tipoDocuemntos = DB::table('identity_document_type')->get();
 
-        // para vistas BLADE
-        // return view('pages/complaints-book', [
-        //     'monedas' => $monedas,
-        //         'tipoDocumentos' => $tipoDocumentos,
-        // ]);
-        // para vistas VueJS
-        return Inertia::render('Landing/ComplaintsBook',[
-            'dataBook' => [
-                'header' => $header,
-                'monedas' => $monedas,
-                'tipoDocuemntos' => $tipoDocuemntos
-            ],
+        return view('pages.complaints-book', [
+            'header' => $header,
+            'monedas' => $monedas,
+            'tipoDocumentos' => $tipoDocuemntos
         ]);
     }
 

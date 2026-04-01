@@ -76,6 +76,21 @@ class WebPageController extends Controller
         return view('pages.contact');
     }
 
+    public function privacy()
+    {
+        return view('pages.privacy');
+    }
+
+    public function terms()
+    {
+        return view('pages.terms');
+    }
+
+    public function complaintsBook()
+    {
+        return view('pages.complaints-book');
+    }
+
     public function nosotros()
     {
 

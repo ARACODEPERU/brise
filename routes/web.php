@@ -34,6 +34,9 @@ Route::get('/servicios', [WebPageController::class, 'services'])->name('web_serv
 Route::get('/proyectos', [WebPageController::class, 'projects'])->name('web_projects');
 Route::get('/proyecto-detalle', [WebPageController::class, 'projectDetail'])->name('web_project_detail');
 Route::get('/contacto', [WebPageController::class, 'contact'])->name('web_contact');
+Route::get('/politica-de-privacidad', [WebPageController::class, 'privacy'])->name('web_privacy');
+Route::get('/terminos-y-condiciones', [WebPageController::class, 'terms'])->name('web_terms');
+Route::get('/libro-de-reclamaciones', [WebPageController::class, 'complaintsBook'])->name('web_complaints_book_client');
 
 // Route::get('/', [LandingController::class, 'index'])->name('index_main');
 // Route::get('/facturador', [LandingController::class, 'biller'])->name('biller_main');

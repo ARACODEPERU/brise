@@ -26,10 +26,10 @@
                 <h4 class="text-white font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-orange-600 pl-3">Navegación</h4>
                 <ul class="space-y-4 text-sm">
                     <li><a href="/" class="hover:text-orange-500 transition">Inicio</a></li>
-                    <li><a href="#nosotros" class="hover:text-orange-500 transition">Nosotros</a></li>
-                    <li><a href="#servicios" class="hover:text-orange-500 transition">Servicios</a></li>
-                    <li><a href="#proyectos" class="hover:text-orange-500 transition">Portafolio</a></li>
-                    <li><a href="#" class="hover:text-orange-500 transition">Preguntas Frecuentes</a></li>
+                    <li><a href="{{ route('web_about') }}" class="hover:text-orange-500 transition">Nosotros</a></li>
+                    <li><a href="{{ route('web_services') }}" class="hover:text-orange-500 transition">Servicios</a></li>
+                    <li><a href="{{ route('web_contact') }}" class="hover:text-orange-500 transition">Contacto</a></li>
+                    <li><a href="" class="hover:text-orange-500 transition">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
 
@@ -69,8 +69,8 @@
         <div class="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-semibold uppercase tracking-widest text-gray-500">
             <p>&copy; {{ date('Y') }} BriseConst. Todos los derechos reservados.</p>
             <div class="flex gap-6">
-                <a href="#" class="hover:text-white transition">Política de Privacidad</a>
-                <a href="#" class="hover:text-white transition">Términos de Servicio</a>
+                <a href="{{ route('web_privacy') }}" class="hover:text-white transition">Política de Privacidad</a>
+                <a href="{{ route('web_terms') }}" class="hover:text-white transition">Términos de Servicio</a>
             </div>
         </div>
     </div>
