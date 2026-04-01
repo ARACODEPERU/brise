@@ -4,7 +4,7 @@
     <!-- Hero Section -->
     <section class="relative h-[50vh] flex items-center bg-gray-900 text-white overflow-hidden pt-20">
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1517036322818-47900b46797b?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Servicios de Ingeniería y Construcción">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Ingeniería Civil y Arquitectura Moderna">
             <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">

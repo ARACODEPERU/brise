@@ -5,7 +5,7 @@
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
         <div class="absolute inset-0 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1503387762-592dea58ed23?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Edificio moderno">
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Arquitectura moderna elegante">
         </div>
         <div class="relative z-10 text-center px-4 max-w-5xl">
             <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-orange-500 uppercase bg-orange-500/10 rounded-full">Líderes en Ingeniería</span>
@@ -167,4 +167,3 @@
         </div>
     </section>
 @stop
-
