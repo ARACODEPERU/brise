@@ -32,12 +32,12 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="space-y-6">
-                    <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Transformando el panorama urbano con ingeniería de precisión.</h2>
+                    <h2 class="text-3xl font-bold text-gray-900 tracking-tight">
+                        ¿Quiénes Somos?
+                    </h2>
                     <p class="text-gray-600 text-lg leading-relaxed">
-                        En <strong>BriseConst</strong>, no solo levantamos muros; creamos los cimientos del progreso. Desde nuestra fundación, nos hemos dedicado a superar las expectativas de nuestros clientes a través de la innovación constante y un compromiso inquebrantable con la calidad.
-                    </p>
-                    <p class="text-gray-600 text-lg leading-relaxed">
-                        Nuestro equipo multidisciplinario de ingenieros, arquitectos y especialistas trabaja en sincronía para entregar proyectos que no solo cumplen con las normativas vigentes, sino que establecen nuevos estándares en la industria.
+                        <strong class="text-gray-900">GRUPO BRISE SOLEIL S.A.C</strong>
+                        , es una empresa dedicada a la prestación de servicios especializados en Ingeniería, Construcción, Inmobiliaria y Saneamiento Físico Legal de Predios. Contamos con un equipo multidisciplinario de profesionales con experiencia técnica, administrativa y legal, orientado a la gestión integral de proyectos públicos y privados. Nuestra actuación se sustenta en el cumplimiento estricto del marco normativo vigente, la aplicación de estándares técnicos de calidad y una gestión eficiente de recursos, garantizando seguridad jurídica y viabilidad técnica en cada intervención.
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
@@ -101,24 +101,33 @@
             <h3 class="text-4xl font-bold text-gray-900">Liderazgo con experiencia</h3>
         </div>
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Member 1 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">
+                        ELIZABETH CARMEN CARHUANINA TAPIA
+                    </h4>
+                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">
+                        Gerente General de GRUPO BRISE SOLEIL
+                    </p>
+                </div>
+                <!-- Member 2 -->
                 <div class="group">
                     <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
                         <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
                         <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900">Ing. Ricardo Briseño</h4>
-                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">CEO & Fundador</p>
-                </div>
-                <!-- Member 2 -->
-                <div class="group">
-                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
-                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900">Arq. Elena Méndez</h4>
-                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">Directora de Diseño</p>
+                    <h4 class="text-xl font-bold text-gray-900">
+                        JULIO JOEL FLORES MENDO
+                    </h4>
+                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">
+                        Sub gerente de GRUPO BRISE SOLEIL S.A.C.
+                    </p>
                 </div>
                 <!-- Member 3 -->
                 <div class="group">
@@ -126,18 +135,22 @@
                         <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
                         <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900">Ing. Carlos Ruíz</h4>
-                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">Gerente de Operaciones</p>
+                    <h4 class="text-xl font-bold text-gray-900">
+                        SAMUEL TORRES MUÑOZ
+                    </h4>
+                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">
+                        Área Legal de GRUPO BRISE SOLEIL S.A.C.
+                    </p>
                 </div>
                 <!-- Member 4 -->
-                <div class="group">
+                {{-- <div class="group">
                     <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
                         <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900">Ing. Alberto Sosa</h4>
                     <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">Jefe de Seguridad</p>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

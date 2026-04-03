@@ -59,6 +59,16 @@
                 <!-- Servicio 1: Construcción Civil -->
                 <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">
                     <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Ingenieria</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repudiandae, modi reprehenderit et, cum veritatis sit distinctio, explicabo tempore impedit dolorem aut? Optio vel modi repellendus, necessitatibus quisquam sint quas?
+                    </p>
+                </div>
+                <!-- Servicio 2: Diseño Estructural -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-4 text-gray-900">Construcción Civil</h3>
@@ -66,14 +76,14 @@
                         Ejecutamos proyectos de infraestructura a gran escala, desde edificaciones residenciales y comerciales hasta obras viales y puentes, con los más altos estándares de calidad y seguridad.
                     </p>
                 </div>
-                <!-- Servicio 2: Diseño Estructural -->
+                <!-- Servicio 3: Gestión de Proyectos -->
                 <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">
                     <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 2v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">Diseño Estructural</h3>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Inmobiliaria</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">
-                        Desarrollamos diseños estructurales robustos y eficientes, optimizando materiales y garantizando la estabilidad y durabilidad de cada construcción, cumpliendo con las normativas sismorresistentes.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quaerat aut ea voluptates odio saepe a eum? Voluptas incidunt, numquam eius officia maiores nihil corporis at laborum quis distinctio voluptates!
                     </p>
                 </div>
                 <!-- Servicio 3: Gestión de Proyectos -->
@@ -81,9 +91,19 @@
                     <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 2v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">Gestión de Proyectos</h3>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Saneamiento Físico Legal de Predios</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">
-                        Lideramos y supervisamos sus proyectos desde su concepción hasta su finalización, asegurando el cumplimiento de plazos, presupuestos y objetivos de calidad, con total transparencia.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quaerat aut ea voluptates odio saepe a eum? Voluptas incidunt, numquam eius officia maiores nihil corporis at laborum quis distinctio voluptates!
+                    </p>
+                </div>
+                <!-- Servicio 3: Gestión de Proyectos -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 2v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Ferretería Online</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus amet, sit consectetur exercitationem est facilis vero quidem minima rem corrupti modi qui voluptates quas expedita, omnis consequuntur nulla magnam tenetur.
                     </p>
                 </div>
             </div>

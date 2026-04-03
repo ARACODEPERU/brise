@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
+    {{-- <section class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
         <div class="absolute inset-0 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Arquitectura moderna elegante">
         </div>
@@ -14,6 +14,19 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#proyectos" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">Nuestros Proyectos</a>
                 <a href="#servicios" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold border border-white/30 transition-all">Ver Servicios</a>
+            </div>
+        </div>
+    </section> --}}
+    <section class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Arquitectura moderna elegante">
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-orange-500 uppercase bg-orange-500/10 rounded-full">Líderes en Ingeniería</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Construimos <span class="text-orange-500">Visiones</span> que Perduran</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto font-light">Especialistas en infraestructura civil, industrial y residencial con los más altos estándares de calidad y seguridad.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#proyectos" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">Ver Servicios</a>
             </div>
         </div>
     </section>
