@@ -58,7 +58,9 @@
                         <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-4 text-gray-900">Nuestra Misión</h3>
-                    <p class="text-gray-600 leading-relaxed text-sm">Proporcionar soluciones constructivas innovadoras y sostenibles que generen valor para nuestros clientes, garantizando la seguridad y el desarrollo de nuestra comunidad.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Brindar servicios especializados en Ingeniería, Construcción, Inmobiliaria y Saneamiento Físico Legal, desarrollando proyectos técnica y legalmente viables, sostenibles y económicamente eficientes. Nos comprometemos a garantizar el cumplimiento de la normativa aplicable, los estándares de calidad y las obligaciones contractuales, generando valor para nuestros clientes y contribuyendo al desarrollo urbano formal y ordenado.
+                    </p>
                 </div>
                 <!-- Visión -->
                 <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">
@@ -66,7 +68,9 @@
                         <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-4 text-gray-900">Nuestra Visión</h3>
-                    <p class="text-gray-600 leading-relaxed text-sm">Ser reconocidos internacionalmente como la constructora más confiable y eficiente, liderando la transformación hacia ciudades más inteligentes y resilientes.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Consolidarnos como una empresa referente a nivel regional en la ejecución y gestión de proyectos de ingeniería, construcción e inmobiliarios, reconocida por su solvencia técnica, seguridad jurídica, transparencia en la gestión y cumplimiento estricto de los compromisos contractuales.
+                    </p>
                 </div>
                 <!-- Valores -->
                 <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-orange-600">

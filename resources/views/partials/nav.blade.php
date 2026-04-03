@@ -28,7 +28,7 @@
 
             <!-- Desktop CTA -->
             <div class="hidden md:block">
-                <button @click="$store.quoteModal.open()" class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-widest transition-all shadow-lg hover:shadow-orange-500/20">
+                <button @click="$store.quoteModal.open()" class="bg-[#c85a00] hover:bg-[#000] text-white px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-widest transition-all shadow-lg hover:shadow-orange-500/20">
                     Cotizar Proyecto
                 </button>
             </div>
