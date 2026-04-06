@@ -8,7 +8,7 @@
             <div class="flex-shrink-0 flex items-center">
                 <a href="/" class="flex items-center gap-2">
                     <span :class="{ 'text-gray-900': !atTop, 'text-white': atTop }" class="text-2xl font-black tracking-tighter uppercase transition-colors">
-                        Brise<span class="text-orange-600">Const</span>
+                        <img src="{{ asset('themes/webpage/images/logo.png') }}" alt="BriseConst" class="h-10">
                     </span>
                 </a>
             </div>
@@ -19,7 +19,7 @@
                 @php $links = ['Inicio' => '/', 'Nosotros' => '/nosotros', 'Servicios' => '/servicios', 'Contacto' => '/contacto']; @endphp
                 @foreach($links as $name => $url)
                     <a href="{{ $url }}" 
-                       :class="{ 'text-gray-600 hover:text-orange-600': !atTop, 'text-gray-200 hover:text-white': atTop }"
+                       :class="{ 'text-gray-600 hover:text-orange-600': !atTop, 'text-gray-600 hover:text-gray-900': atTop }"
                        class="text-xs font-bold uppercase tracking-widest transition-colors duration-200">
                         {{ $name }}
                     </a>
