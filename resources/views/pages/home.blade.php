@@ -17,18 +17,22 @@
             </div>
         </div>
     </section> --}}
-    <section class="relative h-screen flex items-center justify-center">
+    <section class="relative h-screen flex items-center justify-center bg-gray-100 ">
         <div class="absolute inset-0 overflow-hidden">
             <img src="{{ asset('themes/webpage/images/hero-home.jpg') }}" class="w-full h-full object-cover opacity-40" alt="Arquitectura moderna elegante">
         </div>
         <div class="relative z-10 text-center px-4 max-w-5xl">
             <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-[#c85a00] uppercase bg-orange-500/10 rounded-full">Líderes en Ingeniería</span>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-[#001e46]">Construimos <span class="text-[#c85a00]">Visiones</span> que Perduran</h1>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight text-[#001e46]">
+                Expertos transformando espacios en hogares
+            </h1>
             <p class="text-xl md:text-2xl mb-10 text-gray-600 max-w-3xl mx-auto font-light">
-                Especialistas en infraestructura civil, industrial y residencial con los más altos estándares de calidad y seguridad.
+                Especialistas en infraestructura residencial, comercial y corporativa con los más altos estándares de calidad y seguridad.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#proyectos" class="bg-[#c85a00] hover:bg-[#000] text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">Ver Servicios</a>
+                <a href="{{ route('web_services') }}" class="bg-[#c85a00] hover:bg-[#000] text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">
+                    VER SERVICIOS
+                </a>
             </div>
         </div>
     </section>
