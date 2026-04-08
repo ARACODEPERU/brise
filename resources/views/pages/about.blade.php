@@ -41,7 +41,7 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&fit=crop&q=80" class="rounded-lg shadow-lg mt-8" alt="Edificación en construcción civil">
+                    <img src="{{ asset('themes/webpage/images/about-01.jpg') }}" class="rounded-lg shadow-lg mt-8" alt="Edificación en construcción civil">
                     <img src="{{ asset('themes/webpage/images/logo-about.png') }}" class="rounded-lg shadow-lg" alt="Obra en curso">
                 </div>
             </div>
@@ -120,7 +120,7 @@
                 <!-- Member 2 -->
                 <div class="group text-center">
                     <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <img src="{{ asset('themes/webpage/images/about-team-02.jpg') }}" class="w-full aspect-[3/4] object-cover" alt="Director">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#c85a00] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <h4 class="text-xl font-bold text-[#001e46]">
@@ -134,7 +134,7 @@
                 <!-- Member 3 -->
                 <div class="group text-center">
                     <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <img src="{{ asset('themes/webpage/images/about-team-03.jpg') }}" class="w-full aspect-[3/4] object-cover" alt="Director">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#c85a00] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <h4 class="text-xl font-bold text-[#001e46]">

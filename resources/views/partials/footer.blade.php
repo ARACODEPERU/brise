@@ -5,7 +5,7 @@
             <div>
                 <a href="/" class="flex items-center gap-2 mb-6">
                     <span class="text-2xl font-black tracking-tighter uppercase text-white">
-                        Brise<span class="text-[#c85a00]">Const</span>
+                        <img src="{{ asset('themes/webpage/images/logo-blanco.png') }}" alt="">
                     </span>
                 </a>
                 <p class="text-gray-400 leading-relaxed mb-6">

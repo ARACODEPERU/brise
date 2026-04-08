@@ -1,6 +1,10 @@
-<header x-data="{ open: false, atTop: true }" 
+{{-- <header x-data="{ open: false, atTop: true }" 
         @scroll.window="atTop = (window.pageYOffset > 50 ? false : true)"
         :class="{ 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100': !atTop, 'bg-transparent': atTop }"
+        class="fixed top-0 z-50 w-full transition-all duration-300"> --}}
+<header x-data="{ open: false, atTop: true }" 
+        @scroll.window="atTop = (window.pageYOffset > 50 ? false : true)"
+        :class="{ 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100': !atTop, 'bg-white/95': atTop }"
         class="fixed top-0 z-50 w-full transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
