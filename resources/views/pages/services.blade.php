@@ -47,8 +47,8 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1542838180-870386e8a2a5?auto=format&fit=crop&q=80" class="rounded-lg shadow-lg mt-8" alt="Diseño de planos">
-                    <img src="https://images.unsplash.com/photo-1520188688402-d922379c3d42?auto=format&fit=crop&q=80" class="rounded-lg shadow-lg" alt="Obra de construcción moderna">
+                    <img src="{{ asset('themes/webpage/images/services-01.jpg') }}" class="rounded-lg shadow-lg mt-8" alt="Diseño de planos">
+                    <img src="{{ asset('themes/webpage/images/logo-about.png') }}" class="rounded-lg shadow-lg" alt="Obra de construcción moderna">
                 </div>
             </div>
         </div>
