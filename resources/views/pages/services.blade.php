@@ -105,7 +105,9 @@
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 text-center mb-16">
             <h2 class="text-[#c85a00] font-bold tracking-widest uppercase mb-4 text-sm">Compromiso y Calidad</h2>
-            <h3 class="text-4xl font-bold text-[#001e46]">Por qué elegir BriseConst para su próximo proyecto</h3>
+            <h3 class="text-4xl font-bold text-[#001e46]">
+                “Por qué elegir a Grupo Brise-Soleil para su próximo proyecto”
+            </h3>
         </div>
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
@@ -115,7 +117,9 @@
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
                     <h4 class="text-xl font-bold text-[#001e46] mb-2">Expertise Comprobado</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">Más de 20 años de experiencia en la industria, respaldados por proyectos exitosos y clientes satisfechos.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Nuestros profesionales tienen más de 25 años de experiencia en la industria, respaldados por proyectos exitosos y clientes satisfechos.
+                    </p>
                 </div>
                 <!-- Característica 2 -->
                 <div class="p-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300">
