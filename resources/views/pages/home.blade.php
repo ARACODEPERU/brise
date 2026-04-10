@@ -1,7 +1,12 @@
 @extends('layouts.webpage')
 
 @section('content')
-
+    <!-- Preloader -->
+    <div id="preloader" x-show="isLoading" x-transition:leave="transition ease-in duration-500"
+        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+        class="bg-[#fff] flex flex-col items-center justify-center">
+        <img src="{{ asset('themes/webpage/images/logo-about.png') }}" alt="Brise" class="h-40 md:h-32 animate-zoom-in">
+    </div>
     <!-- Hero Section -->
     {{-- <section class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
         <div class="absolute inset-0 overflow-hidden">
@@ -19,18 +24,23 @@
     </section> --}}
     <section class="relative h-screen flex items-center justify-center bg-gray-100 ">
         <div class="absolute inset-0 overflow-hidden">
-            <img src="{{ asset('themes/webpage/images/hero-home.jpg') }}" class="w-full h-full object-cover opacity-40" alt="Arquitectura moderna elegante">
+            <img src="{{ asset('themes/webpage/images/hero-home.jpg') }}" class="w-full h-full object-cover opacity-40"
+                alt="Arquitectura moderna elegante">
         </div>
         <div class="relative z-10 text-center px-4 max-w-5xl">
-            <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-[#c85a00] uppercase bg-orange-500/10 rounded-full">Líderes en Ingeniería</span>
+            <span
+                class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-[#c85a00] uppercase bg-orange-500/10 rounded-full">Líderes
+                en Ingeniería</span>
             <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight text-[#001e46]">
                 Expertos transformando espacios en hogares
             </h1>
             <p class="text-xl md:text-2xl mb-10 text-gray-600 max-w-3xl mx-auto font-light">
-                Especialistas en infraestructura residencial, comercial y corporativa con los más altos estándares de calidad y seguridad.
+                Especialistas en infraestructura residencial, comercial y corporativa con los más altos estándares de
+                calidad y seguridad.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('web_services') }}" class="bg-[#c85a00] hover:bg-[#000] text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">
+                <a href="{{ route('web_services') }}"
+                    class="bg-[#c85a00] hover:bg-[#000] text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">
                     VER SERVICIOS
                 </a>
             </div>
@@ -67,31 +77,50 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2">
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" class="rounded-2xl shadow-2xl relative z-10" alt="Arquitectura residencial moderna y acabados de lujo">
-                        <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-orange-500 rounded-2xl -z-0 hidden md:block"></div>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80"
+                            class="rounded-2xl shadow-2xl relative z-10"
+                            alt="Arquitectura residencial moderna y acabados de lujo">
+                        <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-orange-500 rounded-2xl -z-0 hidden md:block">
+                        </div>
                     </div>
                 </div>
                 <div class="lg:w-1/2">
                     <h2 class="text-[#c85a00] font-bold tracking-widest uppercase mb-4 text-sm">Sobre la Empresa</h2>
-                    <h3 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">Excelencia en cada detalle, desde el cimiento hasta el acabado.</h3>
-                    <p class="text-gray-600 text-lg mb-8">Fundada con la premisa de transformar el paisaje urbano, nuestra constructora combina métodos tradicionales de solidez con las últimas innovaciones tecnológicas en eficiencia energética.</p>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">Excelencia en cada detalle, desde el
+                        cimiento hasta el acabado.</h3>
+                    <p class="text-gray-600 text-lg mb-8">Fundada con la premisa de transformar el paisaje urbano, nuestra
+                        constructora combina métodos tradicionales de solidez con las últimas innovaciones tecnológicas en
+                        eficiencia energética.</p>
                     <ul class="space-y-4 mb-10 text-gray-700">
                         <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
                             Gestión integral de licencias y permisos.
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
                             Materiales de primera calidad certificados.
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
                             Cumplimiento riguroso de plazos de entrega.
                         </li>
                     </ul>
-                    <a href="#" class="inline-flex items-center font-bold text-gray-900 hover:text-[#c85a00] transition">
+                    <a href="#"
+                        class="inline-flex items-center font-bold text-gray-900 hover:text-[#c85a00] transition">
                         Conoce más sobre nuestra historia
-                        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -107,28 +136,52 @@
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-[#c85a00] transition-colors">
-                        <svg class="w-8 h-8 text-[#c85a00] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                <div
+                    class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-[#c85a00] transition-colors">
+                        <svg class="w-8 h-8 text-[#c85a00] group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                            </path>
+                        </svg>
                     </div>
                     <h4 class="text-xl font-bold mb-4">Construcción Civil</h4>
-                    <p class="text-gray-600 leading-relaxed">Edificios residenciales y comerciales diseñados para la máxima habitabilidad y durabilidad urbana.</p>
+                    <p class="text-gray-600 leading-relaxed">Edificios residenciales y comerciales diseñados para la máxima
+                        habitabilidad y durabilidad urbana.</p>
                 </div>
                 <!-- Card 2 -->
-                <div class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-[#c85a00] transition-colors">
-                        <svg class="w-8 h-8 text-[#c85a00] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <div
+                    class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-[#c85a00] transition-colors">
+                        <svg class="w-8 h-8 text-[#c85a00] group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
                     </div>
                     <h4 class="text-xl font-bold mb-4">Obras Industriales</h4>
-                    <p class="text-gray-600 leading-relaxed">Naves logísticas y complejos fabriles con ingeniería estructural avanzada para procesos pesados.</p>
+                    <p class="text-gray-600 leading-relaxed">Naves logísticas y complejos fabriles con ingeniería
+                        estructural avanzada para procesos pesados.</p>
                 </div>
                 <!-- Card 3 -->
-                <div class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-[#c85a00] transition-colors">
-                        <svg class="w-8 h-8 text-[#c85a00] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                <div
+                    class="p-10 border border-gray-100 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white hover:border-orange-500/20 transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-white shadow-md rounded-lg flex items-center justify-center mb-8 group-hover:bg-[#c85a00] transition-colors">
+                        <svg class="w-8 h-8 text-[#c85a00] group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                            </path>
+                        </svg>
                     </div>
                     <h4 class="text-xl font-bold mb-4">Remodelaciones</h4>
-                    <p class="text-gray-600 leading-relaxed">Renovación total de espacios existentes, inyectando modernidad sin perder la esencia arquitectónica.</p>
+                    <p class="text-gray-600 leading-relaxed">Renovación total de espacios existentes, inyectando modernidad
+                        sin perder la esencia arquitectónica.</p>
                 </div>
             </div>
         </div>
@@ -142,34 +195,43 @@
                     <h2 class="text-orange-500 font-bold tracking-widest uppercase mb-4 text-sm">Nuestro Portafolio</h2>
                     <h3 class="text-4xl font-bold">Obras que redefinen paisajes</h3>
                 </div>
-                <a href="#" class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1 hover:text-white hover:border-white transition">Ver todos los proyectos</a>
+                {{-- <a href="#" class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1 hover:text-white hover:border-white transition">Ver todos los proyectos</a> --}}
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project item -->
                 <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 1">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80"></div>
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+                        class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 1">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80">
+                    </div>
                     <div class="absolute bottom-0 left-0 p-8">
-                        <span class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Corporativo</span>
+                        <span
+                            class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Corporativo</span>
                         <h4 class="text-2xl font-bold">Centro Empresarial Skyline</h4>
                     </div>
                 </div>
                 <!-- Project item -->
                 <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 2">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80"></div>
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80"
+                        class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 2">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80">
+                    </div>
                     <div class="absolute bottom-0 left-0 p-8">
-                        <span class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Residencial</span>
+                        <span
+                            class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Residencial</span>
                         <h4 class="text-2xl font-bold">Torres del Valle</h4>
                     </div>
                 </div>
                 <!-- Project item -->
                 <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 3">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80"></div>
+                    <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&q=80"
+                        class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 3">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80">
+                    </div>
                     <div class="absolute bottom-0 left-0 p-8">
-                        <span class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Industrial</span>
+                        <span
+                            class="text-orange-500 text-sm font-bold uppercase tracking-widest mb-2 block">Industrial</span>
                         <h4 class="text-2xl font-bold">Planta Logística Nexo</h4>
                     </div>
                 </div>
@@ -181,8 +243,11 @@
     <section class="py-20 bg-[#c85a00]">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">¿Listo para iniciar su próximo proyecto?</h2>
-            <p class="text-orange-100 text-xl mb-12 max-w-2xl mx-auto font-light">Agende una asesoría técnica gratuita con nuestros ingenieros y reciba un presupuesto preliminar sin compromiso.</p>
-            <a href="#" class="inline-block bg-gray-900 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-black transition-all shadow-xl">Contactar con un Experto</a>
+            <p class="text-orange-100 text-xl mb-12 max-w-2xl mx-auto font-light">Agende una asesoría técnica gratuita con
+                nuestros ingenieros y reciba un presupuesto preliminar sin compromiso.</p>
+            <button @click="$store.quoteModal.open()"
+                class="inline-block bg-gray-900 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-black transition-all shadow-xl">Contactar
+                con un Experto</button>
         </div>
     </section>
 @stop

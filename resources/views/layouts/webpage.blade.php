@@ -15,25 +15,32 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
-    {{-- <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: 'Montserrat', sans-serif;
-        }
-
+    <style>
         [x-cloak] {
             display: none !important;
         }
-
-        html {
-            scroll-behavior: smooth;
+        /* Estilo crítico para que el loader cubra todo antes de que cargue Tailwind */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
         }
-    </style> --}}
+
+        @keyframes logoZoom {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes logoPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .animate-zoom-in {
+            animation: logoZoom 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+                       logoPulse 1s ease-in-out 0.5s infinite;
+        }
+    </style>
 
     <style>
         @font-face {
@@ -51,12 +58,27 @@
 
 </head>
 
-<body class="bg-white text-gray-900 antialiased">
+<body class="bg-white text-gray-900 antialiased" 
+      x-data="{ isLoading: true }" 
+      @load.window="setTimeout(() => isLoading = false, 3000)">
+
+    <!-- Preloader -->
+    {{-- <div id="preloader" 
+         x-show="isLoading" 
+         x-transition:leave="transition ease-in duration-500" 
+         x-transition:leave-start="opacity-100" 
+         x-transition:leave-end="opacity-0"
+         class="bg-[#fff] flex flex-col items-center justify-center">
+        <img src="{{ asset('themes/webpage/images/logo-about.png') }}" alt="Brise" class="h-40 md:h-32 animate-zoom-in">
+    </div> --}}
+
     @include('partials.nav')
 
     <main>
         @yield('content')
     </main>
+
+    @include('partials.modal-quote')
 
     @include('partials.footer')
 </body>

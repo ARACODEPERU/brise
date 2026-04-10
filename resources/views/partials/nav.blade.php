@@ -66,6 +66,3 @@
         </div>
     </div>
 </header>
-
-{{-- Incluimos el modal aquí para que esté disponible globalmente --}}
-@include('partials.modal-quote')
