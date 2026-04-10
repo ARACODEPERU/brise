@@ -225,7 +225,7 @@
                 </div>
                 <!-- Project item -->
                 <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&q=80"
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
                         class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 3">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80">
                     </div>
