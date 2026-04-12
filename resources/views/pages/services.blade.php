@@ -34,7 +34,7 @@
                 <div class="space-y-6">
                     <h2 class="text-3xl font-bold text-[#001e46] tracking-tight">Ingeniería integral para cada desafío.</h2>
                     <p class="text-gray-600 text-lg leading-relaxed">
-                        En Grupo <strong>Brise-Soleil SAC,</strong> somos especialistas en la implementación de metodologías Lean Construction y BIM Management, integrándolas estratégicamente en cada etapa de nuestros proyectos para optimizar recursos, mejorar la planificación y garantizar resultados eficientes y de alta calidad
+                        En <strong class="text-gray-900">GRUPO BRISE SOLEIL S.A.C</strong> somos especialistas en la implementación de metodologías Lean Construction y BIM Management, integrándolas estratégicamente en cada etapa de nuestros proyectos para optimizar recursos, mejorar la planificación y garantizar resultados eficientes y de alta calidad
                     </p>
                     <p class="text-gray-600 text-lg leading-relaxed">
                         Brindamos soluciones integrales en ingeniería y construcción, abarcando desde la concepción y planificación inicial hasta la ejecución y entrega final, adaptándonos a las necesidades específicas de cada cliente y proyecto.
@@ -116,14 +116,32 @@
                         <p class="text-gray-500 line-clamp-2">Desarrollos urbanos sostenibles que elevan el estilo de vida y aseguran su inversión.</p>
                     </div>
                 </div>
+                
+                <!-- Card 4: Inmobiliaria -->
+                <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
+                    <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Proyectos inmobiliarios">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                            <span class="text-white/50 font-black text-4xl italic">04</span>
+                            <div class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white border border-white/30">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-6">
+                        <h3 class="text-2xl font-extrabold text-[#001e46] mb-3">Inmobiliaria</h3>
+                        <p class="text-gray-500 line-clamp-2">Desarrollos urbanos sostenibles que elevan el estilo de vida y aseguran su inversión.</p>
+                    </div>
+                </div>
 
-                <!-- Card 4: Saneamiento -->
-                <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100 lg:col-start-1 lg:ml-[50%] lg:w-full">
+                <!-- Card 5: Saneamiento -->
+                <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
                         <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Saneamiento legal">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
-                            <span class="text-white/50 font-black text-4xl italic">04</span>
+                            <span class="text-white/50 font-black text-4xl italic">05</span>
                             <div class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white border border-white/30">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                             </div>
@@ -135,13 +153,13 @@
                     </div>
                 </div>
 
-                <!-- Card 5: Ferretería -->
-                <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100 lg:col-start-2 lg:ml-[50%] lg:w-full">
+                <!-- Card 6: Ferretería -->
+                <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
                         <img src="https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Ferretería">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
-                            <span class="text-white/50 font-black text-4xl italic">05</span>
+                            <span class="text-white/50 font-black text-4xl italic">06</span>
                             <div class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white border border-white/30">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
                             </div>

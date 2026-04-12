@@ -32,7 +32,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="space-y-6">
-                    <h2 class="text-3xl font-bold text-gray-900 tracking-tight">
+                    <h2 class="text-3xl font-bold text-[#001e46] tracking-tight">
                         ¿QUIÉNES SOMOS?
                     </h2>
                     <p class="text-gray-600 text-lg leading-relaxed text-justify">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <img src="{{ asset('themes/webpage/images/about-01.jpg') }}" class="rounded-lg shadow-lg mt-8" alt="Edificación en construcción civil">
-                    <img src="{{ asset('themes/webpage/images/logo-about.png') }}" class="rounded-lg shadow-lg" alt="Obra en curso">
+                    <img src="{{ asset('themes/webpage/images/about-team-02.jpg') }}" class="rounded-lg shadow-lg" alt="Obra en curso">
                 </div>
             </div>
         </div>
@@ -79,13 +79,13 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4 text-gray-900">Nuestros Valores</h3>
                     <ul class="text-gray-600 text-sm space-y-2 text-justify">
-                        <li class="flex items-center gap-2 font-semibold text-gray-800 italic  tracking-tight text-xs">
+                        <li class="flex items-center gap-2 text-gray-800  tracking-tight text-xs">
                             <span class="w-1.5 h-1.5 bg-[#c85a00] rounded-full"></span> Integridad absoluta
                         </li>
-                        <li class="flex items-center gap-2 font-semibold text-gray-800 italic  tracking-tight text-xs">
+                        <li class="flex items-center gap-2 text-gray-800  tracking-tight text-xs">
                             <span class="w-1.5 h-1.5 bg-[#c85a00] rounded-full"></span> Seguridad preventiva
                         </li>
-                        <li class="flex items-center gap-2 font-semibold text-gray-800 italic  tracking-tight text-xs">
+                        <li class="flex items-center gap-2 text-gray-800  tracking-tight text-xs">
                             <span class="w-1.5 h-1.5 bg-[#c85a00] rounded-full"></span> Calidad garantizada
                         </li>
                     </ul>
@@ -124,7 +124,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-[#c85a00] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <h4 class="text-xl font-bold text-[#001e46]">
-                        JULIO FLORES
+                        JOEL MENDO
                     </h4>
                     <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
                         Sub gerente de 

@@ -29,7 +29,7 @@
         </div>
         <div class="relative z-10 text-center px-4 max-w-5xl">
             <span
-                class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-[#c85a00] uppercase bg-orange-500/10 rounded-full">Líderes
+                class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-[#fff] uppercase bg-[#c85a00] rounded-full">Líderes
                 en Ingeniería</span>
             <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight text-[#001e46]">
                 Expertos transformando espacios en hogares
@@ -52,7 +52,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
                 <div class="text-center">
-                    <div class="text-5xl font-extrabold text-gray-900 mb-2">150+</div>
+                    <div class="text-5xl font-extrabold text-gray-900 mb-2">100+</div>
                     <div class="text-[#c85a00] font-semibold uppercase text-xs tracking-widest">Obras Finalizadas</div>
                 </div>
                 <div class="text-center">
@@ -64,7 +64,7 @@
                     <div class="text-[#c85a00] font-semibold uppercase text-xs tracking-widest">Seguridad Laboral</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-5xl font-extrabold text-gray-900 mb-2">12</div>
+                    <div class="text-5xl font-extrabold text-gray-900 mb-2">02</div>
                     <div class="text-[#c85a00] font-semibold uppercase text-xs tracking-widest">Premios Nacionales</div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="lg:w-1/2">
                     <h2 class="text-[#c85a00] font-bold tracking-widest uppercase mb-4 text-sm">Sobre la Empresa</h2>
-                    <h3 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">Excelencia en cada detalle, desde el
+                    <h3 class="text-4xl font-bold text-[#001e46] mb-6 leading-tight">Excelencia en cada detalle, desde el
                         cimiento hasta el acabado.</h3>
                     <p class="text-gray-600 text-lg mb-8">Fundada con la premisa de transformar el paisaje urbano, nuestra
                         constructora combina métodos tradicionales de solidez con las últimas innovaciones tecnológicas en
@@ -132,7 +132,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-[#c85a00] font-bold tracking-widest uppercase mb-4 text-sm">Servicios Especializados</h2>
-                <h3 class="text-4xl font-bold text-gray-900">Soluciones Constructivas de Extremo a Extremo</h3>
+                <h3 class="text-4xl font-bold text-[#001e46]">Soluciones Constructivas de Extremo a Extremo</h3>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
@@ -246,7 +246,7 @@
             <p class="text-orange-100 text-xl mb-12 max-w-2xl mx-auto font-light">Agende una asesoría técnica gratuita con
                 nuestros ingenieros y reciba un presupuesto preliminar sin compromiso.</p>
             <button @click="$store.quoteModal.open()"
-                class="inline-block bg-gray-900 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-black transition-all shadow-xl">Contactar
+                class="inline-block bg-gray-900 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-[#001e46] transition-all shadow-xl">Contactar
                 con un Experto</button>
         </div>
     </section>
