@@ -12,10 +12,10 @@
          class="relative w-full max-w-lg bg-white dark:bg-gray-900 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-800">
         
         <!-- Header del Modal -->
-        <div class="bg-gray-50 dark:bg-gray-800/50 p-6 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center">
+        <div class="bg-gray-50 dark:bg-[#001e46] p-6 border-b border-gray-100 dark:border-[#001e46] flex justify-between items-center">
             <div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white">Solicitar Presupuesto</h3>
-                <p class="text-xs text-orange-500 font-bold uppercase tracking-widest mt-1">BriseConst Ingeniería</p>
+                <p class="text-xs text-orange-500 font-bold uppercase tracking-widest mt-1">GRUPO BRISE SOLEIL S.A.C.</p>
             </div>
             <button @click="$store.quoteModal.close()" class="text-gray-400 hover:text-orange-600 transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
