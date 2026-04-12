@@ -66,7 +66,7 @@
 
         <!-- Copyright -->
         <div class="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-semibold uppercase tracking-widest text-gray-500">
-            <p>&copy; {{ date('Y') }} BriseConst. Todos los derechos reservados.</p>
+            <p>&copy; {{ date('Y') }} GRUPO BRISE SOLEIL S.A.C. Todos los derechos reservados.</p>
             <div class="flex gap-6">
                 <a href="{{ route('web_privacy') }}" class="hover:text-white transition">Política de Privacidad</a>
                 <a href="{{ route('web_terms') }}" class="hover:text-white transition">Términos de Servicio</a>

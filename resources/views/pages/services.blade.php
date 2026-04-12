@@ -112,8 +112,8 @@
                         </div>
                     </div>
                     <div class="px-4 pb-6">
-                        <h3 class="text-2xl font-extrabold text-[#001e46] mb-3">Inmobiliaria</h3>
-                        <p class="text-gray-500 line-clamp-2">Desarrollos urbanos sostenibles que elevan el estilo de vida y aseguran su inversión.</p>
+                        <h3 class="text-2xl font-extrabold text-[#001e46] mb-3">Reparación y Mantenimiento</h3>
+                        <p class="text-gray-500 line-clamp-2">Servicios profesionales para mantener y mejorar sus instalaciones y estructuras.</p>
                     </div>
                 </div>
                 
@@ -285,7 +285,8 @@
         <div class="max-w-7xl mx-auto px-6 text-center mb-16">
             <h2 class="text-[#c85a00] font-bold tracking-widest uppercase mb-4 text-sm">Compromiso y Calidad</h2>
             <h3 class="text-4xl font-bold text-[#001e46]">
-                “Por qué elegir a Grupo Brise-Soleil para su próximo proyecto”
+                “Por qué elegir a Grupo Brise Soleil S.A.C. 
+                <br>para su próximo proyecto”
             </h3>
         </div>
         <div class="max-w-7xl mx-auto px-6">
