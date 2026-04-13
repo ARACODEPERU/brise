@@ -105,7 +105,7 @@
                 <!-- Member 1 -->
                 <div class="group text-center">
                     <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <img src="{{ asset('themes/webpage/images/about-team-01.jpg') }}" class="w-full aspect-[3/4] object-cover" alt="Director">
                         
                         <div class="absolute inset-0 bg-gradient-to-t from-[#c85a00] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>

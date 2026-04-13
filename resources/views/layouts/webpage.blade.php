@@ -2,8 +2,8 @@
 <html lang="es">
 
 <head>
-    <title>Constructora Profesional | @yield('title', 'Inicio')</title>
-    <link rel="icon" href="{{ asset('themes/webpage/images/icon.png') }}" type="image/gif" sizes="16x16">
+    <title>Grupo Brise Soleil | @yield('title', 'Inicio')</title>
+    <link rel="icon" href="{{ asset('themes/webpage/images/Isologo.jpg') }}" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Empresa de construcción líder en proyectos civiles y arquitectónicos." name="description">
