@@ -71,6 +71,7 @@
             <div class="flex gap-6">
                 <a href="{{ route('web_privacy') }}" class="hover:text-white transition">Política de Privacidad</a>
                 <a href="{{ route('web_terms') }}" class="hover:text-white transition">Términos de Servicio</a>
+                <a href="https://goo.su/UUlgYTV" target="_blank" class="hover:text-white transition">WebMail</a>
             </div>
         </div>
     </div>
