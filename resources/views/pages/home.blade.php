@@ -32,11 +32,11 @@
                 class="inline-block py-1 px-3 mb-4 text-xs font-semibold tracking-widest text-[#fff] uppercase bg-[#c85a00] rounded-full">Líderes
                 en Ingeniería</span>
             <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight text-[#001e46]">
-                Expertos transformando espacios en hogares
+                Diseñamos proyectos impulsados por innovación de vanguardia
             </h1>
             <p class="text-xl md:text-2xl mb-10 text-gray-600 max-w-3xl mx-auto font-light">
-                Especialistas en infraestructura residencial, comercial y corporativa con los más altos estándares de
-                calidad y seguridad.
+                Especialistas en infraestructura residencial, comercial, corporativa e industrial con los m{as altos estándares
+                de calidad y seguridad.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="{{ route('web_services') }}"
@@ -52,19 +52,19 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
                 <div class="text-center">
-                    <div class="text-5xl font-extrabold text-gray-900 mb-2">100+</div>
+                    <div class="text-5xl font-extrabold text-[#001e46] mb-2">100+</div>
                     <div class="text-[#c85a00] font-semibold uppercase text-xs tracking-widest">Obras Finalizadas</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-5xl font-extrabold text-gray-900 mb-2">25</div>
+                    <div class="text-5xl font-extrabold text-[#001e46] mb-2">25</div>
                     <div class="text-[#c85a00] font-semibold uppercase text-xs tracking-widest">Años de Trayectoria</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-5xl font-extrabold text-gray-900 mb-2">100%</div>
+                    <div class="text-5xl font-extrabold text-[#001e46] mb-2">100%</div>
                     <div class="text-[#c85a00] font-semibold uppercase text-xs tracking-widest">Seguridad Laboral</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-5xl font-extrabold text-gray-900 mb-2">02</div>
+                    <div class="text-5xl font-extrabold text-[#001e46] mb-2">02</div>
                     <div class="text-[#c85a00] font-semibold uppercase text-xs tracking-widest">Premios Nacionales</div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2">
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80"
+                        <img src="{{ asset('themes/webpage/images/home-02.jpg') }}"
                             class="rounded-2xl shadow-2xl relative z-10"
                             alt="Arquitectura residencial moderna y acabados de lujo">
                         <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-orange-500 rounded-2xl -z-0 hidden md:block">
@@ -88,40 +88,49 @@
                     <h2 class="text-[#c85a00] font-bold tracking-widest uppercase mb-4 text-sm">Sobre la Empresa</h2>
                     <h3 class="text-4xl font-bold text-[#001e46] mb-6 leading-tight">Excelencia en cada detalle, desde el
                         cimiento hasta el acabado.</h3>
-                    <p class="text-gray-600 text-lg mb-8">Fundada con la premisa de transformar el paisaje urbano, nuestra
-                        constructora combina métodos tradicionales de solidez con las últimas innovaciones tecnológicas en
-                        eficiencia energética.</p>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Fundada con la visión de consolidarnos como una empresa referente a nivel regional en la ejecución y gestión de proyectos de ingeniería,
+                        construcción e inmobiliarios, reconocida por su solvencia técnica, seguridad jurídica, transparencia en la gestión y cumplimiento 
+                        estricto de los compromisos contractuales.
+                    </p>
                     <ul class="space-y-4 mb-10 text-gray-700">
                         <li class="flex items-center gap-3">
                             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
                                 </path>
                             </svg>
-                            Gestión integral de licencias y permisos.
+                            Creatividad e innovación que elevan cada proyecto.
                         </li>
                         <li class="flex items-center gap-3">
                             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
                                 </path>
                             </svg>
-                            Materiales de primera calidad certificados.
+                            Experiencia consolidada en desarrollos de alto nivel.
                         </li>
                         <li class="flex items-center gap-3">
                             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
                                 </path>
                             </svg>
-                            Cumplimiento riguroso de plazos de entrega.
+                            Gestión eficiente con cumplimiento estricto de plazos.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
+                            Selección de materiales certificados de estándar superior.
                         </li>
                     </ul>
-                    <a href="#"
+                    {{-- <a href="#"
                         class="inline-flex items-center font-bold text-gray-900 hover:text-[#c85a00] transition">
                         Conoce más sobre nuestra historia
                         <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
-                    </a>
+                    </a> --}}
                 </div>
             </div>
         </div>
@@ -201,7 +210,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project item -->
                 <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+                    <img src="{{ asset('themes/webpage/images/portafolio-01.jpg') }}"
                         class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 1">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80">
                     </div>
@@ -213,7 +222,7 @@
                 </div>
                 <!-- Project item -->
                 <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80"
+                    <img src="{{ asset('themes/webpage/images/portafolio-02.jpg') }}"
                         class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 2">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80">
                     </div>
@@ -225,7 +234,7 @@
                 </div>
                 <!-- Project item -->
                 <div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
+                    <img src="{{ asset('themes/webpage/images/portafolio-03.jpg') }}"
                         class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Proyecto 3">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent opacity-80">
                     </div>
