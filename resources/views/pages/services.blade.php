@@ -120,7 +120,7 @@
                 <!-- Card 4: Inmobiliaria -->
                 <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Inversión y proyectos inmobiliarios">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Inversión y proyectos inmobiliarios">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                             <span class="text-white/50 font-black text-4xl italic">04</span>
@@ -138,7 +138,7 @@
                 <!-- Card 5: Saneamiento -->
                 <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1503387762-592dea58cb21?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Gestión de saneamiento físico legal de predios">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Gestión de saneamiento físico legal de predios">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                             <span class="text-white/50 font-black text-4xl italic">05</span>
