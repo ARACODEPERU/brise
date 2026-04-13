@@ -35,7 +35,7 @@
                 Diseñamos proyectos impulsados por innovación de vanguardia
             </h1>
             <p class="text-xl md:text-2xl mb-10 text-gray-600 max-w-3xl mx-auto font-light">
-                Especialistas en infraestructura residencial, comercial, corporativa e industrial con los m{as altos estándares
+                Especialistas en infraestructura residencial, comercial, corporativa e industrial con los más altos estándares
                 de calidad y seguridad.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -157,8 +157,8 @@
                         </svg>
                     </div>
                     <h4 class="text-xl font-bold mb-4">Construcción Civil</h4>
-                    <p class="text-gray-600 leading-relaxed">Edificios residenciales y comerciales diseñados para la máxima
-                        habitabilidad y durabilidad urbana.</p>
+                    {{-- <p class="text-gray-600 leading-relaxed">Edificios residenciales y comerciales diseñados para la máxima
+                        habitabilidad y durabilidad urbana.</p> --}}
                 </div>
                 <!-- Card 2 -->
                 <div
@@ -173,8 +173,8 @@
                         </svg>
                     </div>
                     <h4 class="text-xl font-bold mb-4">Obras Industriales</h4>
-                    <p class="text-gray-600 leading-relaxed">Naves logísticas y complejos fabriles con ingeniería
-                        estructural avanzada para procesos pesados.</p>
+                    {{-- <p class="text-gray-600 leading-relaxed">Naves logísticas y complejos fabriles con ingeniería
+                        estructural avanzada para procesos pesados.</p> --}}
                 </div>
                 <!-- Card 3 -->
                 <div
@@ -189,8 +189,8 @@
                         </svg>
                     </div>
                     <h4 class="text-xl font-bold mb-4">Remodelaciones</h4>
-                    <p class="text-gray-600 leading-relaxed">Renovación total de espacios existentes, inyectando modernidad
-                        sin perder la esencia arquitectónica.</p>
+                    {{-- <p class="text-gray-600 leading-relaxed">Renovación total de espacios existentes, inyectando modernidad
+                        sin perder la esencia arquitectónica.</p> --}}
                 </div>
             </div>
         </div>
