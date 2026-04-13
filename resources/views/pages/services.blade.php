@@ -156,7 +156,7 @@
                 <!-- Card 6: Ferretería -->
                 <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1530124566582-aa61277cee3e?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Suministros y ferretería industrial online">
+                        <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Suministros y ferretería industrial online">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                             <span class="text-white/50 font-black text-4xl italic">06</span>
