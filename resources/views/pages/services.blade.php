@@ -102,7 +102,7 @@
                 <!-- Card 3: Reparación y Mantenimiento -->
                 <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1581578731522-aa764da617d9?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Servicios de reparación y mantenimiento">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Servicios de reparación y mantenimiento">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                             <span class="text-white/50 font-black text-4xl italic">03</span>
