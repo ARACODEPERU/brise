@@ -99,15 +99,15 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Inmobiliaria -->
+                <!-- Card 3: Reparación y Mantenimiento -->
                 <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Proyectos inmobiliarios">
+                        <img src="https://images.unsplash.com/photo-1581578731522-aa764da617d9?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Servicios de reparación y mantenimiento">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                             <span class="text-white/50 font-black text-4xl italic">03</span>
                             <div class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white border border-white/30">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path></svg>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                 <!-- Card 4: Inmobiliaria -->
                 <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Proyectos inmobiliarios">
+                        <img src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Inversión y proyectos inmobiliarios">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                             <span class="text-white/50 font-black text-4xl italic">04</span>
@@ -138,7 +138,7 @@
                 <!-- Card 5: Saneamiento -->
                 <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Saneamiento legal">
+                        <img src="https://images.unsplash.com/photo-1503387762-592dea58cb21?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Gestión de saneamiento físico legal de predios">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                             <span class="text-white/50 font-black text-4xl italic">05</span>
@@ -156,7 +156,7 @@
                 <!-- Card 6: Ferretería -->
                 <div class="group relative bg-white rounded-[2.5rem] p-4 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden border border-gray-100">
                     <div class="relative h-64 rounded-[2rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Ferretería">
+                        <img src="https://images.unsplash.com/photo-1530124566582-aa61277cee3e?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Suministros y ferretería industrial online">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#001e46]/80 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                             <span class="text-white/50 font-black text-4xl italic">06</span>

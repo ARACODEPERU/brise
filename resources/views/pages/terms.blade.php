@@ -32,7 +32,7 @@
         <div class="max-w-4xl mx-auto px-6">
             <div class="prose prose-orange max-w-none text-gray-600 leading-relaxed">
                 <p class="text-lg mb-8">
-                    Bienvenido al sitio web de <strong>BriseConst Ingeniería y Construcción</strong>. Al acceder y utilizar este sitio, usted acepta cumplir y estar sujeto a los siguientes términos y condiciones de uso.
+                    Bienvenido al sitio web de <strong>GRUPO BRISE SOLEIL S.A.C</strong>. Al acceder y utilizar este sitio, usted acepta cumplir y estar sujeto a los siguientes términos y condiciones de uso.
                 </p>
 
                 <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase tracking-tight">1. Aceptación de Términos</h2>
@@ -42,17 +42,20 @@
 
                 <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase tracking-tight">2. Propiedad Intelectual</h2>
                 <p>
-                    Todos los contenidos de este sitio web, incluyendo textos, gráficos, logotipos, iconos, imágenes y software, son propiedad de BriseConst o de sus proveedores de contenido y están protegidos por las leyes de propiedad intelectual internacionales.
+                    Todos los contenidos de este sitio web, incluyendo textos, gráficos, logotipos, iconos, imágenes y software, 
+                    son propiedad de GRUPO BRISE SOLEIL S.A.C o de sus proveedores de contenido y están protegidos por las leyes de propiedad intelectual internacionales.
                 </p>
 
                 <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase tracking-tight">3. Uso del Sitio</h2>
                 <p>
-                    El usuario se compromete a utilizar el sitio web y sus servicios de conformidad con la ley, la moral y el orden público. Queda prohibido el uso del sitio con fines ilícitos o lesivos contra BriseConst o cualquier tercero.
+                    El usuario se compromete a utilizar el sitio web y sus servicios de conformidad con 
+                    la ley, la moral y el orden público. Queda prohibido el uso del sitio con fines 
+                    ilícitos o lesivos contra GRUPO BRISE SOLEIL S.A.C o cualquier tercero.
                 </p>
 
                 <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase tracking-tight">4. Limitación de Responsabilidad</h2>
                 <p>
-                    BriseConst no se hace responsable de los daños y perjuicios de cualquier naturaleza que pudieran derivarse de la falta de disponibilidad, mantenimiento y efectivo funcionamiento del sitio web o de sus servicios.
+                    GRUPO BRISE SOLEIL S.A.C no se hace responsable de los daños y perjuicios de cualquier naturaleza que pudieran derivarse de la falta de disponibilidad, mantenimiento y efectivo funcionamiento del sitio web o de sus servicios.
                 </p>
 
                 <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase tracking-tight">5. Servicios y Presupuestos</h2>

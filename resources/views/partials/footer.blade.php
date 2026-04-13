@@ -38,6 +38,7 @@
                 <ul class="space-y-4 text-sm">
                     <li><a href="#" class="hover:text-[#c85a00] transition">Ingeniería</a></li>
                     <li><a href="#" class="hover:text-[#c85a00] transition">Construcción</a></li>
+                    <li><a href="#" class="hover:text-[#c85a00] transition">Reparación y Mantenimiento</a></li>
                     <li><a href="#" class="hover:text-[#c85a00] transition">Inmobiliaria</a></li>
                     <li><a href="#" class="hover:text-[#c85a00] transition">Saneamiento Físico Legal de Predios</a></li>
                     <li><a href="#" class="hover:text-[#c85a00] transition">Ferretería Online </a></li>

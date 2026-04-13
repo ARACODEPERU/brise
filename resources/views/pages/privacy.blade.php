@@ -32,7 +32,7 @@
         <div class="max-w-4xl mx-auto px-6">
             <div class="prose prose-orange max-w-none text-gray-600 leading-relaxed">
                 <p class="text-lg mb-8">
-                    En <strong>BriseConst Ingeniería y Construcción</strong>, valoramos su privacidad y nos comprometemos a proteger sus datos personales. Esta política describe cómo recopilamos, utilizamos y protegemos su información cuando visita nuestro sitio web.
+                    En <strong>GRUPO BRISE SOLEIL S.A.C</strong>, valoramos su privacidad y nos comprometemos a proteger sus datos personales. Esta política describe cómo recopilamos, utilizamos y protegemos su información cuando visita nuestro sitio web.
                 </p>
 
                 <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase tracking-tight">1. Información que recopilamos</h2>
@@ -64,7 +64,10 @@
 
                 <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase tracking-tight">4. Sus derechos (ARCO)</h2>
                 <p>
-                    De acuerdo con la Ley de Protección de Datos Personales, usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos. Para ejercer estos derechos, puede enviarnos una comunicación a <a href="mailto:privacidad@briseconst.com" class="text-orange-600 font-bold hover:underline">privacidad@briseconst.com</a>.
+                    De acuerdo con la Ley de Protección de Datos Personales, usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos. Para ejercer estos derechos, puede enviarnos una comunicación a 
+                    <a href="mailto:gerencia_comercial@grupobrisesoleil.com" class="text-orange-600 font-bold hover:underline">
+                        gerencia_comercial@grupobrisesoleil.com
+                    </a>.
                 </p>
 
                 <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase tracking-tight">5. Cambios en esta política</h2>
