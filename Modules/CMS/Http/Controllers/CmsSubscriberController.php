@@ -122,7 +122,7 @@ class CmsSubscriberController extends Controller
             'message'       => $request->get('message') ?? null,
         ]);
 
-        return to_route('index_main');
+        return response()->json(['success' => true, 'message' => 'Mensaje enviado con éxito']);
     }
     /**
      * Show the form for editing the specified resource.

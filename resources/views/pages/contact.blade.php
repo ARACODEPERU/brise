@@ -33,7 +33,51 @@
         phone: '', 
         subject: '',
         message: '', 
-        attempted: false 
+        attempted: false,
+        loading: false,
+        async submitForm() {
+            this.attempted = true;
+            if (!document.getElementById('contactForm').checkValidity()) {
+                return;
+            }
+            this.loading = true;
+            try {
+                const form = document.getElementById('contactForm');
+                const formData = new FormData(form);
+                const response = await fetch('{{ route('subscriber_public') }}', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    }
+                });
+                const data = await response.json();
+                if (data.success) {
+                    Swal.fire({
+                        title: '¡Éxito!',
+                        text: data.message || 'Tu mensaje ha sido enviado correctamente',
+                        icon: 'success',
+                        confirmButtonColor: '#c85a00',
+                        confirmButtonText: 'Aceptar'
+                    });
+                    this.name = '';
+                    this.email = '';
+                    this.phone = '';
+                    this.subject = '';
+                    this.message = '';
+                    this.attempted = false;
+                }
+            } catch (error) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Hubo un problema al enviar el mensaje',
+                    icon: 'error',
+                    confirmButtonText: 'Aceptar'
+                });
+            } finally {
+                this.loading = false;
+            }
+        }
     }">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-3 gap-16">
@@ -83,12 +127,12 @@
                 <!-- Columna Derecha: Formulario -->
                 <div class="lg:col-span-2">
                     <div class="bg-gray-50 p-8 sm:p-12 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50">
-                        <form action="#" method="POST" class="space-y-6" @submit="attempted = true; if(!$el.checkValidity()) $event.preventDefault()">
+                        <form id="contactForm" action="{{ route('subscriber_public') }}" method="POST" class="space-y-6" @submit.prevent="submitForm">
                             @csrf
                             <div class="grid sm:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2 ml-1">Nombres y Apellidos</label>
-                                    <input type="text" name="name" x-model="name" required
+                                    <input type="text" name="full_name" x-model="name" required
                                         :class="attempted && !name ? 'border-red-500 ring-2 ring-red-500/20' : 'border-gray-200'"
                                         class="w-full bg-white rounded-xl px-4 py-4 text-sm focus:ring-2 focus:ring-[#c85a00] outline-none transition-all border shadow-sm" placeholder="Ej. Juan Pérez">
                                 </div>
@@ -121,8 +165,15 @@
                             </div>
                             
                             <div class="flex justify-end">
-                                <button type="submit" class="w-full sm:w-auto bg-[#c85a00] hover:bg-orange-700 text-white font-bold px-12 py-4 rounded-xl shadow-lg shadow-orange-600/20 transition-all transform active:scale-95 uppercase text-xs tracking-widest">
-                                    Enviar Mensaje
+                                <button type="submit" :disabled="loading" class="w-full sm:w-auto bg-[#c85a00] hover:bg-orange-700 disabled:bg-orange-400 text-white font-bold px-12 py-4 rounded-xl shadow-lg shadow-orange-600/20 transition-all transform active:scale-95 uppercase text-xs tracking-widest flex items-center justify-center gap-2">
+                                    <span x-show="!loading">Enviar Mensaje</span>
+                                    <span x-show="loading" class="flex items-center gap-2">
+                                        <svg class="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                        </svg>
+                                        Enviando...
+                                    </span>
                                 </button>
                             </div>
                         </form>
