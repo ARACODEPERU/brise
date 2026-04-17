@@ -55,7 +55,7 @@ const store = useAppStore();
                         ></div>
                         <div class="ltr:xl:-skew-x-[14deg] rtl:xl:skew-x-[14deg]">
                             <Link :href="route('index_main')" class="w-48 block lg:w-72 ms-10">
-                                <img v-if="company.logo_negative == '/img/logo176x32_negativo.png'" :src="company.logo_negative" alt="Logo" class="w-full" />
+                                <img v-if="company.logo_negative == '/img/logo176x32_negativo.png'" :src="company?.logo_negative" alt="Logo" class="w-full" />
                                 <img v-else :src="`${baseUrl}storage/${company.logo_negative}`" alt="Logo" class="w-full" />
                             </Link>
                             <div class="mt-24 hidden w-full max-w-[430px] lg:block">
@@ -122,7 +122,7 @@ const store = useAppStore();
                                 <div>
                                     <label for="Email">Correo electrónico</label>
                                     <div class="relative text-white-dark">
-                                        <input id="Email" type="text" placeholder="Introducir correo electrónico" 
+                                        <input id="Email" type="text" placeholder="Introducir correo electrónico"
                                             class="form-input pl-10 placeholder:text-white-dark"
                                             v-model="form.email"
                                             required

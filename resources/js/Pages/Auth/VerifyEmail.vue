@@ -51,7 +51,7 @@ const company = usePage().props.company;
                         ></div>
                         <div class="ltr:xl:-skew-x-[14deg] rtl:xl:skew-x-[14deg]">
                             <Link :href="route('index_main')" class="w-48 block lg:w-72 ms-10">
-                                <img v-if="company.logo_negative == '/img/logo176x32_negativo.png'" :src="company.logo_negative" alt="Logo" class="w-full" />
+                                <img v-if="company.logo_negative == '/img/logo176x32_negativo.png'" :src="company?.logo_negative" alt="Logo" class="w-full" />
                                 <img v-else :src="`${baseUrl}storage/${company.logo_negative}`" alt="Logo" class="w-full" />
                             </Link>
                             <div class="mt-24 hidden w-full max-w-[430px] lg:block">
@@ -72,7 +72,7 @@ const company = usePage().props.company;
                                 </template>
                             </Link>
                             <div class="dropdown ms-auto w-max">
-                                
+
                             </div>
                         </div>
                         <div class="w-full max-w-[440px] lg:mt-16">

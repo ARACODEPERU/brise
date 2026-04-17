@@ -71,7 +71,7 @@ const company = usePage().props.company;
                         <div class="absolute inset-y-0 w-8 from-primary/10 via-transparent to-transparent ltr:-right-10 ltr:bg-gradient-to-r rtl:-left-10 rtl:bg-gradient-to-l xl:w-16 ltr:xl:-right-20 rtl:xl:-left-20"></div>
                         <div class="ltr:xl:-skew-x-[14deg] rtl:xl:skew-x-[14deg]">
                             <Link :href="route('index_main')" class="w-48 block lg:w-72 ms-10">
-                                <img v-if="company.logo_negative == '/img/logo176x32_negativo.png'" :src="company.logo_negative" alt="Logo" class="w-full" />
+                                <img v-if="company.logo_negative == '/img/logo176x32_negativo.png'" :src="company?.logo_negative" alt="Logo" class="w-full" />
                                 <img v-else :src="`${baseUrl}storage/${company.logo_negative}`" alt="Logo" class="w-full" />
                             </Link>
                             <div class="mt-24 hidden w-full max-w-[430px] lg:block">
@@ -138,7 +138,7 @@ const company = usePage().props.company;
                                 <div>
                                     <label for="name">Nombre</label>
                                     <div class="relative text-white-dark">
-                                        
+
                                         <TextInput
                                             id="name"
                                             type="text"
