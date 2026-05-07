@@ -101,7 +101,7 @@
             <h3 class="text-4xl font-bold text-[#001e46]">Liderazgo con experiencia</h3>
         </div>
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Member 1 -->
                 <div class="group text-center">
                     <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
@@ -146,14 +146,19 @@
                     </p>
                 </div>
                 <!-- Member 4 -->
-                {{-- <div class="group">
+                <div class="group text-center">
                     <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80" class="w-full aspect-[3/4] object-cover" alt="Director">
-                        <div class="absolute inset-0 bg-gradient-to-t from-orange-600/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <img src="{{ asset('themes/webpage/images/about-team-04.jpg') }}" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#c85a00] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900">Ing. Alberto Sosa</h4>
-                    <p class="text-orange-600 font-semibold text-sm uppercase tracking-wider">Jefe de Seguridad</p>
-                </div> --}}
+                    <h4 class="text-xl font-bold text-[#001e46]">
+                        KAREN HERRERA
+                    </h4>
+                    <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
+                        Área contable de 
+                        <br>GRUPO BRISE SOLEIL S.A.C.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
