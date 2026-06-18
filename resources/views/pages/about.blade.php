@@ -159,6 +159,45 @@
                         <br>GRUPO BRISE SOLEIL S.A.C.
                     </p>
                 </div>
+                <!-- Member 5 -->
+                <div class="group text-center">
+                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="{{ asset('themes/webpage/images/about-team-05.jpg') }}" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#c85a00] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-[#001e46]">
+                        WALTER CARHUANINA
+                    </h4>
+                    <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
+                        Jefe de sistemas de seguridad de GRUPO BRISE SOLEIL S.A.C.
+                    </p>
+                </div>
+                <!-- Member 6 -->
+                <div class="group text-center">
+                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="{{ asset('themes/webpage/images/about-team-06.jpg') }}" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#c85a00] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-[#001e46]">
+                        ARCENIO CARHUANINA
+                    </h4>
+                    <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
+                        Jefe de senior de obras de GRUPO BRISE SOLEIL S.A.C.
+                    </p>
+                </div>
+                <!-- Member 7 -->
+                <div class="group text-center">
+                    <div class="relative overflow-hidden rounded-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="{{ asset('themes/webpage/images/about-team-07.jpg') }}" class="w-full aspect-[3/4] object-cover" alt="Director">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#c85a00] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-[#001e46]">
+                        CARLOS CARHUANINA
+                    </h4>
+                    <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
+                        Jefe ssoma y calidad de GRUPO BRISE SOLEIL S.A.C.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
