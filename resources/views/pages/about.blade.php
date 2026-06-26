@@ -113,7 +113,7 @@
                         ELIZABETH CARHUANINA
                     </h4>
                     <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
-                        Gerente General de 
+                        Gerente General
                         <br>GRUPO BRISE SOLEIL S.A.C
                     </p>
                 </div>
@@ -127,7 +127,7 @@
                         JOEL MENDO
                     </h4>
                     <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
-                        Sub gerente de 
+                        Sub gerente 
                         <br>GRUPO BRISE SOLEIL S.A.C.
                     </p>
                 </div>
@@ -169,7 +169,8 @@
                         WALTER CARHUANINA
                     </h4>
                     <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
-                        Jefe de sistemas de seguridad de GRUPO BRISE SOLEIL S.A.C.
+                        Jefe de sistemas de seguridad
+                        <br>GRUPO BRISE SOLEIL S.A.C.
                     </p>
                 </div>
                 <!-- Member 6 -->
@@ -182,7 +183,8 @@
                         ARCENIO CARHUANINA
                     </h4>
                     <p class="text-[#c85a00] font-semibold text-sm uppercase tracking-wider">
-                        Jefe de senior de obras de GRUPO BRISE SOLEIL S.A.C.
+                        Jefe senior de obras de 
+                        <br>GRUPO BRISE SOLEIL S.A.C.
                     </p>
                 </div>
                 <!-- Member 7 -->
