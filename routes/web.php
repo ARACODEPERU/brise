@@ -31,6 +31,7 @@ Route::get('/', [WebPageController::class, 'home'])->name('index_main');
 Route::get('/home', [WebPageController::class, 'home'])->name('index_main2');
 Route::get('/nosotros', [WebPageController::class, 'about'])->name('web_about');
 Route::get('/servicios', [WebPageController::class, 'services'])->name('web_services');
+Route::get('/webinar', [WebPageController::class, 'webinar'])->name('web_webinar');
 Route::get('/proyectos', [WebPageController::class, 'projects'])->name('web_projects');
 Route::get('/proyecto-detalle', [WebPageController::class, 'projectDetail'])->name('web_project_detail');
 Route::get('/contacto', [WebPageController::class, 'contact'])->name('web_contact');

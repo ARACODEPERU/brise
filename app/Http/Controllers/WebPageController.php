@@ -61,6 +61,11 @@ class WebPageController extends Controller
         return view('pages.services');
     }
 
+    public function webinar()
+    {
+        return view('pages.webinar');
+    }
+
     public function projects()
     {
         return view('pages.projects');

@@ -1,7 +1,4 @@
-{{-- <header x-data="{ open: false, atTop: true }" 
-        @scroll.window="atTop = (window.pageYOffset > 50 ? false : true)"
-        :class="{ 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100': !atTop, 'bg-transparent': atTop }"
-        class="fixed top-0 z-50 w-full transition-all duration-300"> --}}
+
 <header x-data="{ open: false, atTop: true }" 
         @scroll.window="atTop = (window.pageYOffset > 50 ? false : true)"
         :class="{ 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100': !atTop, 'bg-white/95': atTop }"
@@ -20,7 +17,7 @@
             <!-- Desktop Menu -->
             <nav class="hidden md:flex space-x-8">
                 {{-- @php $links = ['Inicio' => '/', 'Nosotros' => '/nosotros', 'Servicios' => '/servicios', 'Proyectos' => '/proyectos']; @endphp --}}
-                @php $links = ['Inicio' => '/', 'Nosotros' => '/nosotros', 'Servicios' => '/servicios', 'Contacto' => '/contacto']; @endphp
+                @php $links = ['Inicio' => '/', 'Nosotros' => '/nosotros', 'Servicios' => '/servicios', 'Webinar' => '/webinar', 'Contacto' => '/contacto']; @endphp
                 @foreach($links as $name => $url)
                     <a href="{{ $url }}" 
                        :class="{ 'text-gray-600 hover:text-orange-600': !atTop, 'text-gray-600 hover:text-gray-900': atTop }"
